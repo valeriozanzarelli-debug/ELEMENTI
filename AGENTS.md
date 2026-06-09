@@ -27,6 +27,7 @@ ELEMENTI/
 | `simulate_sorti_proper.py` | Simulazione CORRETTA ADM (1€ intero/sorte) |
 | `find_profit_zones.py` | Scansione profitto per ruota/anno/sorte |
 | `simulate_wheel_daily_report.py` | Report giornaliero TORINO/ROMA/BARI |
+| `five_year_validation.py` | Validazione definitiva 5 anni: null ipergeometrico esatto, betting, selection-bias MC |
 
 ## Regole da rispettare
 
@@ -42,6 +43,11 @@ ELEMENTI/
 - Profitto reale lungo periodo: solo **NAZIONALE ambo** (vedi `data/analysis/profit_zones.json`).
 - TORINO 2025 ambo: +1042€ singolo anno ma bilancio 2015–26 negativo.
 - Terno/quaterna/cinquina: hit troppo rari; profitti da singoli colpi = fortuna.
+- **Validazione 5 anni (2021-03 → 2026-03, 10.164 transizioni, 11 ruote)**: nessuna
+  regola (cross o data-driven) batte il null ipergeometrico esatto; il "ritrova 3-4 su 5"
+  è interamente copertura del pool (4.002 osservati vs 4.004 attesi); betting 1€/sorte
+  in perdita su tutte le sorti; best cell entro il max nullo Monte Carlo (percentile 73%).
+  Vedi `data/analysis/FIVE_YEAR_VALIDATION.md`.
 
 ## Ruote
 
