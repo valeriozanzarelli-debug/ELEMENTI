@@ -1,0 +1,33 @@
+{
+  "digit_stream": {
+    "length": 10823,
+    "chi2_uniform_0_to_9": 6.3218,
+    "chi2_df": 9,
+    "lag1_autocorr": 0.018625,
+    "two_halves_homogeneity_chi2": 6.4193,
+    "two_halves_df": 9,
+    "perm_null_chi2_iid_uniform_digits": {
+      "reps": 499,
+      "fraction_null_ge_observed": 0.6754,
+      "two_sided_p_approx": 0.6493
+    },
+    "perm_null_lag1_autocorr_abs": {
+      "reps": 499,
+      "fraction_null_abs_ge_observed": 0.0541
+    }
+  },
+  "cycle_lengths": {
+    "n_completed_cycles": 1104,
+    "mean": 9.7998,
+    "std": 2.7281,
+    "min": 5,
+    "max": 29,
+    "corr_cycle_index_vs_length": -0.436221,
+    "lag1_autocorr_lengths": 0.238108,
+    "perm_null_length_lag1_ac": {
+      "reps": 299,
+      "fraction_null_ge_observed": 0.0
+    }
+  },
+  "interpretation": "Chi2 vs Uniform(0..9) i.i.d.: confronto con stream simulati; lag1-autocorr reale vs permutazioni (stesso multiset). Corr(indice_ciclo, lunghezza) negativa spesso riflette cambi di formato storico (piu numeri per estrazione nel tempo => cicli piu corti), non un segnale casuale."
+}

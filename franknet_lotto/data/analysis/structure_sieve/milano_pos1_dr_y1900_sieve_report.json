@@ -1,0 +1,71 @@
+{
+  "disclaimer": "Non è decrittazione. I p-value sono nominali; con molte metriche ci si aspetta falsi positivi ~5% sotto nulla. Usare Bonferroni o FDR.",
+  "series": {
+    "wheel": "MILANO",
+    "position": 1,
+    "mode": "dr",
+    "from_year": 1900,
+    "n": 9309
+  },
+  "null": {
+    "reps": 199,
+    "method": "iid_permutation"
+  },
+  "metrics": [
+    {
+      "metric": "lag1_autocorr",
+      "value_on_data": -0.000891,
+      "p_value_two_sided_perm": 0.954774,
+      "percentile_rank_le": 47.74
+    },
+    {
+      "metric": "spectral_peak_ratio",
+      "value_on_data": 0.009181,
+      "p_value_two_sided_perm": 0.160804,
+      "percentile_rank_le": 91.96
+    },
+    {
+      "metric": "higuchi_fractal_dim",
+      "value_on_data": 0.997685,
+      "p_value_two_sided_perm": 0.442211,
+      "percentile_rank_le": 22.11
+    },
+    {
+      "metric": "hurst_rs",
+      "value_on_data": 0.536236,
+      "p_value_two_sided_perm": 0.572864,
+      "percentile_rank_le": 71.36
+    },
+    {
+      "metric": "dfa_alpha",
+      "value_on_data": 0.509824,
+      "p_value_two_sided_perm": 0.462312,
+      "percentile_rank_le": 76.88
+    },
+    {
+      "metric": "runs_z_above_median",
+      "value_on_data": -0.314066,
+      "p_value_two_sided_perm": 0.78392,
+      "percentile_rank_le": 39.2
+    },
+    {
+      "metric": "diff_variance_ratio",
+      "value_on_data": 2.001786,
+      "p_value_two_sided_perm": 0.914573,
+      "percentile_rank_le": 45.73
+    },
+    {
+      "metric": "skew_kurtosis_gap",
+      "value_on_data": 1.240724,
+      "p_value_two_sided_perm": 0.572864,
+      "percentile_rank_le": 28.64
+    }
+  ],
+  "summary": {
+    "n_metrics": 8,
+    "nominal_p_lt_0.05_count": 0,
+    "nominal_p_lt_0.01_count": 0,
+    "bonferroni_alpha_0.05_per_test": 0.00625,
+    "metrics_below_bonferroni_0.05": 0
+  }
+}

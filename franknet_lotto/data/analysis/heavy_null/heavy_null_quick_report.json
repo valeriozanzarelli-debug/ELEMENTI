@@ -1,0 +1,27 @@
+{
+  "tier": "quick",
+  "monte_carlo": {
+    "digit_chi2_observed": 6.321815,
+    "digit_mc_reps": 2000,
+    "p_value_digit": 0.718641,
+    "transitions_pooled": 98256,
+    "trans_chi2_observed": 194.567235,
+    "trans_perm_reps": 800,
+    "p_value_transition": 0.001248
+  },
+  "benjamini_hochberg_fdr_0.05": [
+    {
+      "name": "digit_stream_chi2_vs_iid_uniform",
+      "p_value": 0.718641,
+      "adjusted_p": 0.718641,
+      "reject": false
+    },
+    {
+      "name": "decile_transition_chi2_perm_independence",
+      "p_value": 0.001248,
+      "adjusted_p": 0.002497,
+      "reject": true
+    }
+  ],
+  "interpretation": "Stream cifre (sum mod 10): chi2 non estremo vs i.i.d. uniforme (p_MC non piccolo). Transizioni decile->decile: il chi2 osservato supera quasi tutti i null permutati; associazione residua from->to oltre i margini (o violazione delle ipotesi del test). BH-FDR q=0.05: 1 test rigettato/i su 2 (vedi reject per nome)."
+}

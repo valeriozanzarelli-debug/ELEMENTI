@@ -1,0 +1,955 @@
+{
+  "holdout_wheel": "MILANO",
+  "train_wheels": [
+    "BARI",
+    "CAGLIARI",
+    "FIRENZE",
+    "GENOVA",
+    "NAPOLI",
+    "PALERMO",
+    "ROMA",
+    "TORINO",
+    "VENEZIA",
+    "NAZIONALE"
+  ],
+  "n_transitions": 500,
+  "offsets": {
+    "train": 1001,
+    "test": 501
+  },
+  "cross_opt_v1": {
+    "train_10w": {
+      "wheels": {
+        "BARI": {
+          "period": [
+            "2017-06-01",
+            "2020-09-22"
+          ],
+          "hits": 1630,
+          "total": 2500,
+          "mc_mean": 1629.6666666666667,
+          "mc_p95": 1669,
+          "beats_p95": false,
+          "margin_mean": 0.33333333333325754,
+          "margin_p95": -39,
+          "avg_pool": 58.668,
+          "avg_per_draw": 3.26
+        },
+        "CAGLIARI": {
+          "period": [
+            "2017-06-01",
+            "2020-09-22"
+          ],
+          "hits": 1660,
+          "total": 2500,
+          "mc_mean": 1635.0555555555557,
+          "mc_p95": 1671,
+          "beats_p95": false,
+          "margin_mean": 24.944444444444343,
+          "margin_p95": -11,
+          "avg_pool": 58.862,
+          "avg_per_draw": 3.32
+        },
+        "FIRENZE": {
+          "period": [
+            "2017-06-01",
+            "2020-09-22"
+          ],
+          "hits": 1624,
+          "total": 2500,
+          "mc_mean": 1617.888888888889,
+          "mc_p95": 1654,
+          "beats_p95": false,
+          "margin_mean": 6.111111111111086,
+          "margin_p95": -30,
+          "avg_pool": 58.244,
+          "avg_per_draw": 3.248
+        },
+        "GENOVA": {
+          "period": [
+            "2017-06-01",
+            "2020-09-22"
+          ],
+          "hits": 1637,
+          "total": 2500,
+          "mc_mean": 1634.9444444444443,
+          "mc_p95": 1671,
+          "beats_p95": false,
+          "margin_mean": 2.0555555555556566,
+          "margin_p95": -34,
+          "avg_pool": 58.858,
+          "avg_per_draw": 3.274
+        },
+        "NAPOLI": {
+          "period": [
+            "2017-06-01",
+            "2020-09-22"
+          ],
+          "hits": 1625,
+          "total": 2500,
+          "mc_mean": 1615.4444444444443,
+          "mc_p95": 1654,
+          "beats_p95": false,
+          "margin_mean": 9.555555555555657,
+          "margin_p95": -29,
+          "avg_pool": 58.156,
+          "avg_per_draw": 3.25
+        },
+        "PALERMO": {
+          "period": [
+            "2017-06-01",
+            "2020-09-22"
+          ],
+          "hits": 1624,
+          "total": 2500,
+          "mc_mean": 1633.4444444444443,
+          "mc_p95": 1670,
+          "beats_p95": false,
+          "margin_mean": -9.444444444444343,
+          "margin_p95": -46,
+          "avg_pool": 58.804,
+          "avg_per_draw": 3.248
+        },
+        "ROMA": {
+          "period": [
+            "2017-06-01",
+            "2020-09-22"
+          ],
+          "hits": 1630,
+          "total": 2500,
+          "mc_mean": 1640.2222222222222,
+          "mc_p95": 1679,
+          "beats_p95": false,
+          "margin_mean": -10.222222222222172,
+          "margin_p95": -49,
+          "avg_pool": 59.048,
+          "avg_per_draw": 3.26
+        },
+        "TORINO": {
+          "period": [
+            "2017-06-01",
+            "2020-09-22"
+          ],
+          "hits": 1624,
+          "total": 2500,
+          "mc_mean": 1627.2777777777778,
+          "mc_p95": 1667,
+          "beats_p95": false,
+          "margin_mean": -3.2777777777778283,
+          "margin_p95": -43,
+          "avg_pool": 58.582,
+          "avg_per_draw": 3.248
+        },
+        "VENEZIA": {
+          "period": [
+            "2017-06-01",
+            "2020-09-22"
+          ],
+          "hits": 1638,
+          "total": 2500,
+          "mc_mean": 1636.4444444444443,
+          "mc_p95": 1677,
+          "beats_p95": false,
+          "margin_mean": 1.5555555555556566,
+          "margin_p95": -39,
+          "avg_pool": 58.912,
+          "avg_per_draw": 3.276
+        },
+        "NAZIONALE": {
+          "period": [
+            "2017-06-01",
+            "2020-09-22"
+          ],
+          "hits": 1631,
+          "total": 2500,
+          "mc_mean": 1627.7222222222222,
+          "mc_p95": 1666,
+          "beats_p95": false,
+          "margin_mean": 3.2777777777778283,
+          "margin_p95": -35,
+          "avg_pool": 58.598,
+          "avg_per_draw": 3.262
+        }
+      },
+      "aggregate": {
+        "wheels_ok": 10,
+        "hits": 16323,
+        "mc_mean": 16298.111111111113,
+        "mc_p95": 16678,
+        "margin_mean": 24.888888888886868,
+        "margin_p95": -355,
+        "beats_p95_wheels": 0
+      }
+    },
+    "test_10w": {
+      "wheels": {
+        "BARI": {
+          "period": [
+            "2020-09-22",
+            "2023-10-26"
+          ],
+          "hits": 1588,
+          "total": 2500,
+          "mc_mean": 1629.0,
+          "mc_p95": 1664,
+          "beats_p95": false,
+          "margin_mean": -41.0,
+          "margin_p95": -76,
+          "avg_pool": 58.644,
+          "avg_per_draw": 3.176
+        },
+        "CAGLIARI": {
+          "period": [
+            "2020-09-22",
+            "2023-10-26"
+          ],
+          "hits": 1636,
+          "total": 2500,
+          "mc_mean": 1642.1666666666667,
+          "mc_p95": 1684,
+          "beats_p95": false,
+          "margin_mean": -6.1666666666667425,
+          "margin_p95": -48,
+          "avg_pool": 59.118,
+          "avg_per_draw": 3.272
+        },
+        "FIRENZE": {
+          "period": [
+            "2020-09-22",
+            "2023-10-26"
+          ],
+          "hits": 1618,
+          "total": 2500,
+          "mc_mean": 1628.888888888889,
+          "mc_p95": 1668,
+          "beats_p95": false,
+          "margin_mean": -10.888888888888914,
+          "margin_p95": -50,
+          "avg_pool": 58.64,
+          "avg_per_draw": 3.236
+        },
+        "GENOVA": {
+          "period": [
+            "2020-09-22",
+            "2023-10-26"
+          ],
+          "hits": 1603,
+          "total": 2500,
+          "mc_mean": 1618.7777777777778,
+          "mc_p95": 1656,
+          "beats_p95": false,
+          "margin_mean": -15.777777777777828,
+          "margin_p95": -53,
+          "avg_pool": 58.276,
+          "avg_per_draw": 3.206
+        },
+        "NAPOLI": {
+          "period": [
+            "2020-09-22",
+            "2023-10-26"
+          ],
+          "hits": 1632,
+          "total": 2500,
+          "mc_mean": 1628.2222222222222,
+          "mc_p95": 1666,
+          "beats_p95": false,
+          "margin_mean": 3.7777777777778283,
+          "margin_p95": -34,
+          "avg_pool": 58.616,
+          "avg_per_draw": 3.264
+        },
+        "PALERMO": {
+          "period": [
+            "2020-09-22",
+            "2023-10-26"
+          ],
+          "hits": 1623,
+          "total": 2500,
+          "mc_mean": 1624.0555555555557,
+          "mc_p95": 1662,
+          "beats_p95": false,
+          "margin_mean": -1.0555555555556566,
+          "margin_p95": -39,
+          "avg_pool": 58.466,
+          "avg_per_draw": 3.246
+        },
+        "ROMA": {
+          "period": [
+            "2020-09-22",
+            "2023-10-26"
+          ],
+          "hits": 1617,
+          "total": 2500,
+          "mc_mean": 1611.5555555555557,
+          "mc_p95": 1647,
+          "beats_p95": false,
+          "margin_mean": 5.444444444444343,
+          "margin_p95": -30,
+          "avg_pool": 58.016,
+          "avg_per_draw": 3.234
+        },
+        "TORINO": {
+          "period": [
+            "2020-09-22",
+            "2023-10-26"
+          ],
+          "hits": 1674,
+          "total": 2500,
+          "mc_mean": 1639.3333333333333,
+          "mc_p95": 1674,
+          "beats_p95": false,
+          "margin_mean": 34.66666666666674,
+          "margin_p95": 0,
+          "avg_pool": 59.016,
+          "avg_per_draw": 3.348
+        },
+        "VENEZIA": {
+          "period": [
+            "2020-09-22",
+            "2023-10-26"
+          ],
+          "hits": 1620,
+          "total": 2500,
+          "mc_mean": 1636.7222222222222,
+          "mc_p95": 1676,
+          "beats_p95": false,
+          "margin_mean": -16.72222222222217,
+          "margin_p95": -56,
+          "avg_pool": 58.922,
+          "avg_per_draw": 3.24
+        },
+        "NAZIONALE": {
+          "period": [
+            "2020-09-22",
+            "2023-10-26"
+          ],
+          "hits": 1648,
+          "total": 2500,
+          "mc_mean": 1634.2777777777778,
+          "mc_p95": 1672,
+          "beats_p95": false,
+          "margin_mean": 13.722222222222172,
+          "margin_p95": -24,
+          "avg_pool": 58.834,
+          "avg_per_draw": 3.296
+        }
+      },
+      "aggregate": {
+        "wheels_ok": 10,
+        "hits": 16259,
+        "mc_mean": 16293.000000000002,
+        "mc_p95": 16669,
+        "margin_mean": -34.00000000000182,
+        "margin_p95": -410,
+        "beats_p95_wheels": 0
+      }
+    }
+  },
+  "optimized": {
+    "name": "v1+no_vdiff",
+    "config": {
+      "twin11": true,
+      "twin_also_pm1": false,
+      "add_comp_pure": true,
+      "add_vert_pure": true,
+      "add_vert_diff_neighbors": false,
+      "comp_cross_only": false,
+      "add_special_4590": false,
+      "twin_shift_quintina": false
+    },
+    "leaderboard_train_top10": [
+      {
+        "name": "v1+no_vdiff",
+        "config": {
+          "twin11": true,
+          "twin_also_pm1": false,
+          "add_comp_pure": true,
+          "add_vert_pure": true,
+          "add_vert_diff_neighbors": false,
+          "comp_cross_only": false,
+          "add_special_4590": false,
+          "twin_shift_quintina": false
+        },
+        "hits": 15869,
+        "margin_mean": 57.55555555555475
+      },
+      {
+        "name": "v2_pm1_no_orig_cross",
+        "config": {
+          "twin11": true,
+          "twin_also_pm1": true,
+          "add_comp_pure": true,
+          "add_vert_pure": true,
+          "add_vert_diff_neighbors": true,
+          "comp_cross_only": true,
+          "add_special_4590": false,
+          "twin_shift_quintina": false
+        },
+        "hits": 13243,
+        "margin_mean": 45.88888888888869
+      },
+      {
+        "name": "v1+comp_only",
+        "config": {
+          "twin11": true,
+          "twin_also_pm1": false,
+          "add_comp_pure": true,
+          "add_vert_pure": true,
+          "add_vert_diff_neighbors": true,
+          "comp_cross_only": true,
+          "add_special_4590": false,
+          "twin_shift_quintina": false
+        },
+        "hits": 12972,
+        "margin_mean": 42.38888888888687
+      },
+      {
+        "name": "v1+twin_pm1",
+        "config": {
+          "twin11": true,
+          "twin_also_pm1": true,
+          "add_comp_pure": true,
+          "add_vert_pure": true,
+          "add_vert_diff_neighbors": true,
+          "comp_cross_only": false,
+          "add_special_4590": false,
+          "twin_shift_quintina": false
+        },
+        "hits": 16532,
+        "margin_mean": 39.111111111109494
+      },
+      {
+        "name": "v2_comp_only+pm1+special",
+        "config": {
+          "twin11": true,
+          "twin_also_pm1": true,
+          "add_comp_pure": true,
+          "add_vert_pure": true,
+          "add_vert_diff_neighbors": true,
+          "comp_cross_only": true,
+          "add_special_4590": true,
+          "twin_shift_quintina": false
+        },
+        "hits": 13301,
+        "margin_mean": 36.11111111111131
+      },
+      {
+        "name": "v2_twin_pm1+special",
+        "config": {
+          "twin11": true,
+          "twin_also_pm1": true,
+          "add_comp_pure": true,
+          "add_vert_pure": true,
+          "add_vert_diff_neighbors": true,
+          "comp_cross_only": false,
+          "add_special_4590": true,
+          "twin_shift_quintina": false
+        },
+        "hits": 16573,
+        "margin_mean": 28.111111111113132
+      },
+      {
+        "name": "cross_opt_v1_baseline",
+        "config": {
+          "twin11": true,
+          "twin_also_pm1": false,
+          "add_comp_pure": true,
+          "add_vert_pure": true,
+          "add_vert_diff_neighbors": true,
+          "comp_cross_only": false,
+          "add_special_4590": false,
+          "twin_shift_quintina": false
+        },
+        "hits": 16323,
+        "margin_mean": 24.888888888886868
+      },
+      {
+        "name": "v2_twin_pm1+shift",
+        "config": {
+          "twin11": true,
+          "twin_also_pm1": true,
+          "add_comp_pure": true,
+          "add_vert_pure": true,
+          "add_vert_diff_neighbors": true,
+          "comp_cross_only": false,
+          "add_special_4590": false,
+          "twin_shift_quintina": true
+        },
+        "hits": 17058,
+        "margin_mean": 19.944444444445253
+      },
+      {
+        "name": "v1+special",
+        "config": {
+          "twin11": true,
+          "twin_also_pm1": false,
+          "add_comp_pure": true,
+          "add_vert_pure": true,
+          "add_vert_diff_neighbors": true,
+          "comp_cross_only": false,
+          "add_special_4590": true,
+          "twin_shift_quintina": false
+        },
+        "hits": 16364,
+        "margin_mean": 12.999999999998181
+      },
+      {
+        "name": "v2_full_tuned",
+        "config": {
+          "twin11": true,
+          "twin_also_pm1": true,
+          "add_comp_pure": true,
+          "add_vert_pure": true,
+          "add_vert_diff_neighbors": true,
+          "comp_cross_only": false,
+          "add_special_4590": true,
+          "twin_shift_quintina": true
+        },
+        "hits": 17096,
+        "margin_mean": 9.05555555555111
+      }
+    ],
+    "train_10w": {
+      "wheels": {
+        "BARI": {
+          "period": [
+            "2017-06-01",
+            "2020-09-22"
+          ],
+          "hits": 1589,
+          "total": 2500,
+          "mc_mean": 1579.388888888889,
+          "mc_p95": 1618,
+          "beats_p95": false,
+          "margin_mean": 9.611111111111086,
+          "margin_p95": -29,
+          "avg_pool": 56.858,
+          "avg_per_draw": 3.178
+        },
+        "CAGLIARI": {
+          "period": [
+            "2017-06-01",
+            "2020-09-22"
+          ],
+          "hits": 1619,
+          "total": 2500,
+          "mc_mean": 1587.4444444444443,
+          "mc_p95": 1627,
+          "beats_p95": false,
+          "margin_mean": 31.555555555555657,
+          "margin_p95": -8,
+          "avg_pool": 57.148,
+          "avg_per_draw": 3.238
+        },
+        "FIRENZE": {
+          "period": [
+            "2017-06-01",
+            "2020-09-22"
+          ],
+          "hits": 1573,
+          "total": 2500,
+          "mc_mean": 1566.7222222222222,
+          "mc_p95": 1606,
+          "beats_p95": false,
+          "margin_mean": 6.277777777777828,
+          "margin_p95": -33,
+          "avg_pool": 56.402,
+          "avg_per_draw": 3.146
+        },
+        "GENOVA": {
+          "period": [
+            "2017-06-01",
+            "2020-09-22"
+          ],
+          "hits": 1596,
+          "total": 2500,
+          "mc_mean": 1588.388888888889,
+          "mc_p95": 1626,
+          "beats_p95": false,
+          "margin_mean": 7.611111111111086,
+          "margin_p95": -30,
+          "avg_pool": 57.182,
+          "avg_per_draw": 3.192
+        },
+        "NAPOLI": {
+          "period": [
+            "2017-06-01",
+            "2020-09-22"
+          ],
+          "hits": 1576,
+          "total": 2500,
+          "mc_mean": 1566.7222222222222,
+          "mc_p95": 1606,
+          "beats_p95": false,
+          "margin_mean": 9.277777777777828,
+          "margin_p95": -30,
+          "avg_pool": 56.402,
+          "avg_per_draw": 3.152
+        },
+        "PALERMO": {
+          "period": [
+            "2017-06-01",
+            "2020-09-22"
+          ],
+          "hits": 1585,
+          "total": 2500,
+          "mc_mean": 1587.2222222222222,
+          "mc_p95": 1625,
+          "beats_p95": false,
+          "margin_mean": -2.2222222222221717,
+          "margin_p95": -40,
+          "avg_pool": 57.14,
+          "avg_per_draw": 3.17
+        },
+        "ROMA": {
+          "period": [
+            "2017-06-01",
+            "2020-09-22"
+          ],
+          "hits": 1583,
+          "total": 2500,
+          "mc_mean": 1593.0,
+          "mc_p95": 1634,
+          "beats_p95": false,
+          "margin_mean": -10.0,
+          "margin_p95": -51,
+          "avg_pool": 57.348,
+          "avg_per_draw": 3.166
+        },
+        "TORINO": {
+          "period": [
+            "2017-06-01",
+            "2020-09-22"
+          ],
+          "hits": 1566,
+          "total": 2500,
+          "mc_mean": 1578.111111111111,
+          "mc_p95": 1616,
+          "beats_p95": false,
+          "margin_mean": -12.111111111111086,
+          "margin_p95": -50,
+          "avg_pool": 56.812,
+          "avg_per_draw": 3.132
+        },
+        "VENEZIA": {
+          "period": [
+            "2017-06-01",
+            "2020-09-22"
+          ],
+          "hits": 1596,
+          "total": 2500,
+          "mc_mean": 1588.611111111111,
+          "mc_p95": 1626,
+          "beats_p95": false,
+          "margin_mean": 7.388888888888914,
+          "margin_p95": -30,
+          "avg_pool": 57.19,
+          "avg_per_draw": 3.192
+        },
+        "NAZIONALE": {
+          "period": [
+            "2017-06-01",
+            "2020-09-22"
+          ],
+          "hits": 1586,
+          "total": 2500,
+          "mc_mean": 1575.8333333333333,
+          "mc_p95": 1610,
+          "beats_p95": false,
+          "margin_mean": 10.166666666666742,
+          "margin_p95": -24,
+          "avg_pool": 56.73,
+          "avg_per_draw": 3.172
+        }
+      },
+      "aggregate": {
+        "wheels_ok": 10,
+        "hits": 15869,
+        "mc_mean": 15811.444444444445,
+        "mc_p95": 16194,
+        "margin_mean": 57.55555555555475,
+        "margin_p95": -325,
+        "beats_p95_wheels": 0
+      }
+    },
+    "test_10w": {
+      "wheels": {
+        "BARI": {
+          "period": [
+            "2020-09-22",
+            "2023-10-26"
+          ],
+          "hits": 1541,
+          "total": 2500,
+          "mc_mean": 1579.888888888889,
+          "mc_p95": 1619,
+          "beats_p95": false,
+          "margin_mean": -38.888888888888914,
+          "margin_p95": -78,
+          "avg_pool": 56.876,
+          "avg_per_draw": 3.082
+        },
+        "CAGLIARI": {
+          "period": [
+            "2020-09-22",
+            "2023-10-26"
+          ],
+          "hits": 1583,
+          "total": 2500,
+          "mc_mean": 1590.3333333333333,
+          "mc_p95": 1627,
+          "beats_p95": false,
+          "margin_mean": -7.3333333333332575,
+          "margin_p95": -44,
+          "avg_pool": 57.252,
+          "avg_per_draw": 3.166
+        },
+        "FIRENZE": {
+          "period": [
+            "2020-09-22",
+            "2023-10-26"
+          ],
+          "hits": 1569,
+          "total": 2500,
+          "mc_mean": 1578.8333333333333,
+          "mc_p95": 1615,
+          "beats_p95": false,
+          "margin_mean": -9.833333333333258,
+          "margin_p95": -46,
+          "avg_pool": 56.838,
+          "avg_per_draw": 3.138
+        },
+        "GENOVA": {
+          "period": [
+            "2020-09-22",
+            "2023-10-26"
+          ],
+          "hits": 1549,
+          "total": 2500,
+          "mc_mean": 1569.8333333333333,
+          "mc_p95": 1607,
+          "beats_p95": false,
+          "margin_mean": -20.833333333333258,
+          "margin_p95": -58,
+          "avg_pool": 56.514,
+          "avg_per_draw": 3.098
+        },
+        "NAPOLI": {
+          "period": [
+            "2020-09-22",
+            "2023-10-26"
+          ],
+          "hits": 1577,
+          "total": 2500,
+          "mc_mean": 1577.111111111111,
+          "mc_p95": 1616,
+          "beats_p95": false,
+          "margin_mean": -0.11111111111108585,
+          "margin_p95": -39,
+          "avg_pool": 56.776,
+          "avg_per_draw": 3.154
+        },
+        "PALERMO": {
+          "period": [
+            "2020-09-22",
+            "2023-10-26"
+          ],
+          "hits": 1583,
+          "total": 2500,
+          "mc_mean": 1574.4444444444443,
+          "mc_p95": 1610,
+          "beats_p95": false,
+          "margin_mean": 8.555555555555657,
+          "margin_p95": -27,
+          "avg_pool": 56.68,
+          "avg_per_draw": 3.166
+        },
+        "ROMA": {
+          "period": [
+            "2020-09-22",
+            "2023-10-26"
+          ],
+          "hits": 1571,
+          "total": 2500,
+          "mc_mean": 1561.2777777777778,
+          "mc_p95": 1600,
+          "beats_p95": false,
+          "margin_mean": 9.722222222222172,
+          "margin_p95": -29,
+          "avg_pool": 56.206,
+          "avg_per_draw": 3.142
+        },
+        "TORINO": {
+          "period": [
+            "2020-09-22",
+            "2023-10-26"
+          ],
+          "hits": 1619,
+          "total": 2500,
+          "mc_mean": 1587.6666666666667,
+          "mc_p95": 1628,
+          "beats_p95": false,
+          "margin_mean": 31.333333333333258,
+          "margin_p95": -9,
+          "avg_pool": 57.156,
+          "avg_per_draw": 3.238
+        },
+        "VENEZIA": {
+          "period": [
+            "2020-09-22",
+            "2023-10-26"
+          ],
+          "hits": 1575,
+          "total": 2500,
+          "mc_mean": 1588.8333333333333,
+          "mc_p95": 1630,
+          "beats_p95": false,
+          "margin_mean": -13.833333333333258,
+          "margin_p95": -55,
+          "avg_pool": 57.198,
+          "avg_per_draw": 3.15
+        },
+        "NAZIONALE": {
+          "period": [
+            "2020-09-22",
+            "2023-10-26"
+          ],
+          "hits": 1596,
+          "total": 2500,
+          "mc_mean": 1587.388888888889,
+          "mc_p95": 1628,
+          "beats_p95": false,
+          "margin_mean": 8.611111111111086,
+          "margin_p95": -32,
+          "avg_pool": 57.146,
+          "avg_per_draw": 3.192
+        }
+      },
+      "aggregate": {
+        "wheels_ok": 10,
+        "hits": 15763,
+        "mc_mean": 15795.611111111111,
+        "mc_p95": 16180,
+        "margin_mean": -32.61111111111131,
+        "margin_p95": -417,
+        "beats_p95_wheels": 0
+      }
+    },
+    "vs_v1_test_delta_hits": -496,
+    "vs_v1_test_delta_margin_p95": -7
+  },
+  "holdout_final": {
+    "v1_train": {
+      "wheels": {
+        "MILANO": {
+          "period": [
+            "2017-06-01",
+            "2020-09-22"
+          ],
+          "hits": 1605,
+          "total": 2500,
+          "mc_mean": 1615.9444444444443,
+          "mc_p95": 1656,
+          "beats_p95": false,
+          "margin_mean": -10.944444444444343,
+          "margin_p95": -51,
+          "avg_pool": 58.174,
+          "avg_per_draw": 3.21
+        }
+      },
+      "aggregate": {
+        "wheels_ok": 1,
+        "hits": 1605,
+        "mc_mean": 1615.9444444444443,
+        "mc_p95": 1656,
+        "margin_mean": -10.944444444444343,
+        "margin_p95": -51,
+        "beats_p95_wheels": 0
+      }
+    },
+    "v1_test": {
+      "wheels": {
+        "MILANO": {
+          "period": [
+            "2020-09-22",
+            "2023-10-26"
+          ],
+          "hits": 1582,
+          "total": 2500,
+          "mc_mean": 1625.7222222222222,
+          "mc_p95": 1663,
+          "beats_p95": false,
+          "margin_mean": -43.72222222222217,
+          "margin_p95": -81,
+          "avg_pool": 58.526,
+          "avg_per_draw": 3.164
+        }
+      },
+      "aggregate": {
+        "wheels_ok": 1,
+        "hits": 1582,
+        "mc_mean": 1625.7222222222222,
+        "mc_p95": 1663,
+        "margin_mean": -43.72222222222217,
+        "margin_p95": -81,
+        "beats_p95_wheels": 0
+      }
+    },
+    "opt_train": {
+      "wheels": {
+        "MILANO": {
+          "period": [
+            "2017-06-01",
+            "2020-09-22"
+          ],
+          "hits": 1564,
+          "total": 2500,
+          "mc_mean": 1567.611111111111,
+          "mc_p95": 1607,
+          "beats_p95": false,
+          "margin_mean": -3.611111111111086,
+          "margin_p95": -43,
+          "avg_pool": 56.434,
+          "avg_per_draw": 3.128
+        }
+      },
+      "aggregate": {
+        "wheels_ok": 1,
+        "hits": 1564,
+        "mc_mean": 1567.611111111111,
+        "mc_p95": 1607,
+        "margin_mean": -3.611111111111086,
+        "margin_p95": -43,
+        "beats_p95_wheels": 0
+      }
+    },
+    "opt_test": {
+      "wheels": {
+        "MILANO": {
+          "period": [
+            "2020-09-22",
+            "2023-10-26"
+          ],
+          "hits": 1533,
+          "total": 2500,
+          "mc_mean": 1577.0,
+          "mc_p95": 1613,
+          "beats_p95": false,
+          "margin_mean": -44.0,
+          "margin_p95": -80,
+          "avg_pool": 56.772,
+          "avg_per_draw": 3.066
+        }
+      },
+      "aggregate": {
+        "wheels_ok": 1,
+        "hits": 1533,
+        "mc_mean": 1577.0,
+        "mc_p95": 1613,
+        "margin_mean": -44.0,
+        "margin_p95": -80,
+        "beats_p95_wheels": 0
+      }
+    }
+  }
+}

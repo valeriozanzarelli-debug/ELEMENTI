@@ -1,0 +1,553 @@
+{
+  "transitions": 200,
+  "wheels": [
+    {
+      "wheel": "BARI",
+      "transitions": 200,
+      "period": [
+        "2025-04-01",
+        "2026-03-17"
+      ],
+      "n_draws_available": 10650,
+      "best_method": "cross_opt_v1",
+      "methods": {
+        "cross_only": {
+          "hits": 635,
+          "total": 1000,
+          "mc_mean": 613.9444444444445,
+          "mc_p95": 638,
+          "beats_mc_mean": true,
+          "beats_p95": false,
+          "margin_vs_mean": 21.055555555555543,
+          "margin_vs_p95": -3,
+          "avg_pool": 55.255,
+          "avg_per_draw": 3.175
+        },
+        "cross_twin11": {
+          "hits": 630,
+          "total": 1000,
+          "mc_mean": 613.0555555555555,
+          "mc_p95": 637,
+          "beats_mc_mean": true,
+          "beats_p95": false,
+          "margin_vs_mean": 16.944444444444457,
+          "margin_vs_p95": -7,
+          "avg_pool": 55.175,
+          "avg_per_draw": 3.15
+        },
+        "cross_opt_v1": {
+          "hits": 677,
+          "total": 1000,
+          "mc_mean": 650.7777777777778,
+          "mc_p95": 674,
+          "beats_mc_mean": true,
+          "beats_p95": true,
+          "margin_vs_mean": 26.22222222222217,
+          "margin_vs_p95": 3,
+          "avg_pool": 58.57,
+          "avg_per_draw": 3.385
+        }
+      }
+    },
+    {
+      "wheel": "CAGLIARI",
+      "transitions": 200,
+      "period": [
+        "2025-04-01",
+        "2026-03-17"
+      ],
+      "n_draws_available": 7175,
+      "best_method": "cross_opt_v1",
+      "methods": {
+        "cross_only": {
+          "hits": 610,
+          "total": 1000,
+          "mc_mean": 617.3888888888889,
+          "mc_p95": 642,
+          "beats_mc_mean": false,
+          "beats_p95": false,
+          "margin_vs_mean": -7.388888888888914,
+          "margin_vs_p95": -32,
+          "avg_pool": 55.565,
+          "avg_per_draw": 3.05
+        },
+        "cross_twin11": {
+          "hits": 617,
+          "total": 1000,
+          "mc_mean": 617.1666666666666,
+          "mc_p95": 641,
+          "beats_mc_mean": false,
+          "beats_p95": false,
+          "margin_vs_mean": -0.16666666666662877,
+          "margin_vs_p95": -24,
+          "avg_pool": 55.545,
+          "avg_per_draw": 3.085
+        },
+        "cross_opt_v1": {
+          "hits": 660,
+          "total": 1000,
+          "mc_mean": 654.9444444444445,
+          "mc_p95": 679,
+          "beats_mc_mean": true,
+          "beats_p95": false,
+          "margin_vs_mean": 5.055555555555543,
+          "margin_vs_p95": -19,
+          "avg_pool": 58.945,
+          "avg_per_draw": 3.3
+        }
+      }
+    },
+    {
+      "wheel": "FIRENZE",
+      "transitions": 200,
+      "period": [
+        "2025-04-01",
+        "2026-03-17"
+      ],
+      "n_draws_available": 10816,
+      "best_method": "cross_opt_v1",
+      "methods": {
+        "cross_only": {
+          "hits": 616,
+          "total": 1000,
+          "mc_mean": 612.0,
+          "mc_p95": 638,
+          "beats_mc_mean": true,
+          "beats_p95": false,
+          "margin_vs_mean": 4.0,
+          "margin_vs_p95": -22,
+          "avg_pool": 55.08,
+          "avg_per_draw": 3.08
+        },
+        "cross_twin11": {
+          "hits": 616,
+          "total": 1000,
+          "mc_mean": 611.1111111111111,
+          "mc_p95": 636,
+          "beats_mc_mean": true,
+          "beats_p95": false,
+          "margin_vs_mean": 4.888888888888914,
+          "margin_vs_p95": -20,
+          "avg_pool": 55,
+          "avg_per_draw": 3.08
+        },
+        "cross_opt_v1": {
+          "hits": 659,
+          "total": 1000,
+          "mc_mean": 646.8888888888889,
+          "mc_p95": 670,
+          "beats_mc_mean": true,
+          "beats_p95": false,
+          "margin_vs_mean": 12.111111111111086,
+          "margin_vs_p95": -11,
+          "avg_pool": 58.22,
+          "avg_per_draw": 3.295
+        }
+      }
+    },
+    {
+      "wheel": "GENOVA",
+      "transitions": 200,
+      "period": [
+        "2025-04-01",
+        "2026-03-17"
+      ],
+      "n_draws_available": 7247,
+      "best_method": "cross_opt_v1",
+      "methods": {
+        "cross_only": {
+          "hits": 616,
+          "total": 1000,
+          "mc_mean": 620.3888888888889,
+          "mc_p95": 644,
+          "beats_mc_mean": false,
+          "beats_p95": false,
+          "margin_vs_mean": -4.388888888888914,
+          "margin_vs_p95": -28,
+          "avg_pool": 55.835,
+          "avg_per_draw": 3.08
+        },
+        "cross_twin11": {
+          "hits": 612,
+          "total": 1000,
+          "mc_mean": 619.5,
+          "mc_p95": 644,
+          "beats_mc_mean": false,
+          "beats_p95": false,
+          "margin_vs_mean": -7.5,
+          "margin_vs_p95": -32,
+          "avg_pool": 55.755,
+          "avg_per_draw": 3.06
+        },
+        "cross_opt_v1": {
+          "hits": 649,
+          "total": 1000,
+          "mc_mean": 654.8333333333334,
+          "mc_p95": 678,
+          "beats_mc_mean": false,
+          "beats_p95": false,
+          "margin_vs_mean": -5.833333333333371,
+          "margin_vs_p95": -29,
+          "avg_pool": 58.935,
+          "avg_per_draw": 3.245
+        }
+      }
+    },
+    {
+      "wheel": "MILANO",
+      "transitions": 200,
+      "period": [
+        "2025-04-01",
+        "2026-03-17"
+      ],
+      "n_draws_available": 10822,
+      "best_method": "cross_opt_v1",
+      "methods": {
+        "cross_only": {
+          "hits": 602,
+          "total": 1000,
+          "mc_mean": 618.1111111111111,
+          "mc_p95": 643,
+          "beats_mc_mean": false,
+          "beats_p95": false,
+          "margin_vs_mean": -16.111111111111086,
+          "margin_vs_p95": -41,
+          "avg_pool": 55.63,
+          "avg_per_draw": 3.01
+        },
+        "cross_twin11": {
+          "hits": 605,
+          "total": 1000,
+          "mc_mean": 615.6666666666666,
+          "mc_p95": 640,
+          "beats_mc_mean": false,
+          "beats_p95": false,
+          "margin_vs_mean": -10.666666666666629,
+          "margin_vs_p95": -35,
+          "avg_pool": 55.41,
+          "avg_per_draw": 3.025
+        },
+        "cross_opt_v1": {
+          "hits": 635,
+          "total": 1000,
+          "mc_mean": 652.0,
+          "mc_p95": 676,
+          "beats_mc_mean": false,
+          "beats_p95": false,
+          "margin_vs_mean": -17.0,
+          "margin_vs_p95": -41,
+          "avg_pool": 58.68,
+          "avg_per_draw": 3.175
+        }
+      }
+    },
+    {
+      "wheel": "NAPOLI",
+      "transitions": 200,
+      "period": [
+        "2025-04-01",
+        "2026-03-17"
+      ],
+      "n_draws_available": 10818,
+      "best_method": "cross_opt_v1",
+      "methods": {
+        "cross_only": {
+          "hits": 585,
+          "total": 1000,
+          "mc_mean": 616.6111111111111,
+          "mc_p95": 641,
+          "beats_mc_mean": false,
+          "beats_p95": false,
+          "margin_vs_mean": -31.611111111111086,
+          "margin_vs_p95": -56,
+          "avg_pool": 55.495,
+          "avg_per_draw": 2.925
+        },
+        "cross_twin11": {
+          "hits": 584,
+          "total": 1000,
+          "mc_mean": 615.0555555555555,
+          "mc_p95": 639,
+          "beats_mc_mean": false,
+          "beats_p95": false,
+          "margin_vs_mean": -31.055555555555543,
+          "margin_vs_p95": -55,
+          "avg_pool": 55.355,
+          "avg_per_draw": 2.92
+        },
+        "cross_opt_v1": {
+          "hits": 623,
+          "total": 1000,
+          "mc_mean": 651.2222222222222,
+          "mc_p95": 675,
+          "beats_mc_mean": false,
+          "beats_p95": false,
+          "margin_vs_mean": -28.22222222222217,
+          "margin_vs_p95": -52,
+          "avg_pool": 58.61,
+          "avg_per_draw": 3.115
+        }
+      }
+    },
+    {
+      "wheel": "PALERMO",
+      "transitions": 200,
+      "period": [
+        "2025-04-01",
+        "2026-03-17"
+      ],
+      "n_draws_available": 10798,
+      "best_method": "cross_opt_v1",
+      "methods": {
+        "cross_only": {
+          "hits": 632,
+          "total": 1000,
+          "mc_mean": 615.8333333333334,
+          "mc_p95": 642,
+          "beats_mc_mean": true,
+          "beats_p95": false,
+          "margin_vs_mean": 16.16666666666663,
+          "margin_vs_p95": -10,
+          "avg_pool": 55.425,
+          "avg_per_draw": 3.16
+        },
+        "cross_twin11": {
+          "hits": 627,
+          "total": 1000,
+          "mc_mean": 614.0555555555555,
+          "mc_p95": 638,
+          "beats_mc_mean": true,
+          "beats_p95": false,
+          "margin_vs_mean": 12.944444444444457,
+          "margin_vs_p95": -11,
+          "avg_pool": 55.265,
+          "avg_per_draw": 3.135
+        },
+        "cross_opt_v1": {
+          "hits": 663,
+          "total": 1000,
+          "mc_mean": 651.5555555555555,
+          "mc_p95": 675,
+          "beats_mc_mean": true,
+          "beats_p95": false,
+          "margin_vs_mean": 11.444444444444457,
+          "margin_vs_p95": -12,
+          "avg_pool": 58.64,
+          "avg_per_draw": 3.315
+        }
+      }
+    },
+    {
+      "wheel": "ROMA",
+      "transitions": 200,
+      "period": [
+        "2025-04-01",
+        "2026-03-17"
+      ],
+      "n_draws_available": 10822,
+      "best_method": "cross_opt_v1",
+      "methods": {
+        "cross_only": {
+          "hits": 645,
+          "total": 1000,
+          "mc_mean": 619.1111111111111,
+          "mc_p95": 644,
+          "beats_mc_mean": true,
+          "beats_p95": true,
+          "margin_vs_mean": 25.888888888888914,
+          "margin_vs_p95": 1,
+          "avg_pool": 55.72,
+          "avg_per_draw": 3.225
+        },
+        "cross_twin11": {
+          "hits": 648,
+          "total": 1000,
+          "mc_mean": 616.2777777777778,
+          "mc_p95": 642,
+          "beats_mc_mean": true,
+          "beats_p95": true,
+          "margin_vs_mean": 31.72222222222217,
+          "margin_vs_p95": 6,
+          "avg_pool": 55.465,
+          "avg_per_draw": 3.24
+        },
+        "cross_opt_v1": {
+          "hits": 682,
+          "total": 1000,
+          "mc_mean": 653.3888888888889,
+          "mc_p95": 678,
+          "beats_mc_mean": true,
+          "beats_p95": true,
+          "margin_vs_mean": 28.611111111111086,
+          "margin_vs_p95": 4,
+          "avg_pool": 58.805,
+          "avg_per_draw": 3.41
+        }
+      }
+    },
+    {
+      "wheel": "TORINO",
+      "transitions": 200,
+      "period": [
+        "2025-04-01",
+        "2026-03-17"
+      ],
+      "n_draws_available": 10822,
+      "best_method": "cross_opt_v1",
+      "methods": {
+        "cross_only": {
+          "hits": 642,
+          "total": 1000,
+          "mc_mean": 622.4444444444445,
+          "mc_p95": 647,
+          "beats_mc_mean": true,
+          "beats_p95": false,
+          "margin_vs_mean": 19.555555555555543,
+          "margin_vs_p95": -5,
+          "avg_pool": 56.02,
+          "avg_per_draw": 3.21
+        },
+        "cross_twin11": {
+          "hits": 637,
+          "total": 1000,
+          "mc_mean": 621.1666666666666,
+          "mc_p95": 645,
+          "beats_mc_mean": true,
+          "beats_p95": false,
+          "margin_vs_mean": 15.833333333333371,
+          "margin_vs_p95": -8,
+          "avg_pool": 55.905,
+          "avg_per_draw": 3.185
+        },
+        "cross_opt_v1": {
+          "hits": 674,
+          "total": 1000,
+          "mc_mean": 655.4444444444445,
+          "mc_p95": 680,
+          "beats_mc_mean": true,
+          "beats_p95": false,
+          "margin_vs_mean": 18.555555555555543,
+          "margin_vs_p95": -6,
+          "avg_pool": 58.99,
+          "avg_per_draw": 3.37
+        }
+      }
+    },
+    {
+      "wheel": "VENEZIA",
+      "transitions": 200,
+      "period": [
+        "2025-04-01",
+        "2026-03-17"
+      ],
+      "n_draws_available": 10821,
+      "best_method": "cross_opt_v1",
+      "methods": {
+        "cross_only": {
+          "hits": 638,
+          "total": 1000,
+          "mc_mean": 615.2777777777778,
+          "mc_p95": 640,
+          "beats_mc_mean": true,
+          "beats_p95": false,
+          "margin_vs_mean": 22.72222222222217,
+          "margin_vs_p95": -2,
+          "avg_pool": 55.375,
+          "avg_per_draw": 3.19
+        },
+        "cross_twin11": {
+          "hits": 637,
+          "total": 1000,
+          "mc_mean": 613.2777777777778,
+          "mc_p95": 638,
+          "beats_mc_mean": true,
+          "beats_p95": false,
+          "margin_vs_mean": 23.72222222222217,
+          "margin_vs_p95": -1,
+          "avg_pool": 55.195,
+          "avg_per_draw": 3.185
+        },
+        "cross_opt_v1": {
+          "hits": 669,
+          "total": 1000,
+          "mc_mean": 653.0,
+          "mc_p95": 676,
+          "beats_mc_mean": true,
+          "beats_p95": false,
+          "margin_vs_mean": 16.0,
+          "margin_vs_p95": -7,
+          "avg_pool": 58.77,
+          "avg_per_draw": 3.345
+        }
+      }
+    },
+    {
+      "wheel": "NAZIONALE",
+      "transitions": 200,
+      "period": [
+        "2025-04-01",
+        "2026-03-17"
+      ],
+      "n_draws_available": 3384,
+      "best_method": "cross_opt_v1",
+      "methods": {
+        "cross_only": {
+          "hits": 631,
+          "total": 1000,
+          "mc_mean": 617.2222222222222,
+          "mc_p95": 641,
+          "beats_mc_mean": true,
+          "beats_p95": false,
+          "margin_vs_mean": 13.777777777777828,
+          "margin_vs_p95": -10,
+          "avg_pool": 55.55,
+          "avg_per_draw": 3.155
+        },
+        "cross_twin11": {
+          "hits": 627,
+          "total": 1000,
+          "mc_mean": 614.9444444444445,
+          "mc_p95": 640,
+          "beats_mc_mean": true,
+          "beats_p95": false,
+          "margin_vs_mean": 12.055555555555543,
+          "margin_vs_p95": -13,
+          "avg_pool": 55.345,
+          "avg_per_draw": 3.135
+        },
+        "cross_opt_v1": {
+          "hits": 663,
+          "total": 1000,
+          "mc_mean": 651.0555555555555,
+          "mc_p95": 674,
+          "beats_mc_mean": true,
+          "beats_p95": false,
+          "margin_vs_mean": 11.944444444444457,
+          "margin_vs_p95": -11,
+          "avg_pool": 58.595,
+          "avg_per_draw": 3.315
+        }
+      }
+    }
+  ],
+  "totals": {
+    "cross_only": {
+      "hits": 6852,
+      "mc_mean": 6788.333333333334,
+      "mc_p95": 7060,
+      "beats_p95": 1
+    },
+    "cross_twin11": {
+      "hits": 6840,
+      "mc_mean": 6771.277777777778,
+      "mc_p95": 7040,
+      "beats_p95": 1
+    },
+    "cross_opt_v1": {
+      "hits": 7254,
+      "mc_mean": 7175.11111111111,
+      "mc_p95": 7435,
+      "beats_p95": 2
+    }
+  }
+}

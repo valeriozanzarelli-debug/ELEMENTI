@@ -1,0 +1,1221 @@
+{
+  "audit_version": 1,
+  "started_utc": "2026-03-20T01:31:03.201856+00:00",
+  "tier": "quick",
+  "root": "C:\\Users\\valer\\Desktop\\ELEMENTI\\franknet_lotto",
+  "phases": [
+    {
+      "name": "parse_draws",
+      "script": "parse_draws.py",
+      "args": [],
+      "exit_code": 0,
+      "seconds": 1.109,
+      "status": "ok"
+    },
+    {
+      "name": "coupon_cycle_stream",
+      "script": "coupon_cycle_stream.py",
+      "args": [],
+      "exit_code": 0,
+      "seconds": 0.581,
+      "status": "ok"
+    },
+    {
+      "name": "analyze_coupon_cycles",
+      "script": "analyze_coupon_cycles.py",
+      "args": [],
+      "exit_code": 0,
+      "seconds": 0.523,
+      "status": "ok"
+    },
+    {
+      "name": "first_hit_chain_analysis",
+      "script": "first_hit_chain_analysis.py",
+      "args": [],
+      "exit_code": 0,
+      "seconds": 0.666,
+      "status": "ok"
+    },
+    {
+      "name": "structure_sieve_milano_n",
+      "script": "structure_sieve.py",
+      "args": [
+        "--wheel",
+        "MILANO",
+        "--position",
+        "1",
+        "--mode",
+        "n",
+        "--from-year",
+        "1900",
+        "--null-reps",
+        "199"
+      ],
+      "exit_code": 0,
+      "seconds": 33.101,
+      "status": "ok"
+    },
+    {
+      "name": "heavy_null_engine",
+      "script": "heavy_null_engine.py",
+      "args": [
+        "--tier",
+        "quick"
+      ],
+      "exit_code": 0,
+      "seconds": 39.085,
+      "status": "ok"
+    },
+    {
+      "name": "single_cell_series",
+      "script": "single_cell_derived_series.py",
+      "args": [
+        "--wheel",
+        "MILANO",
+        "--position",
+        "1",
+        "--from-year",
+        "1900",
+        "--lag",
+        "5"
+      ],
+      "exit_code": 0,
+      "seconds": 2.065,
+      "status": "ok"
+    },
+    {
+      "name": "discover_structure",
+      "script": "discover_sequence_structure.py",
+      "args": [
+        "--series-csv",
+        "C:\\Users\\valer\\Desktop\\ELEMENTI\\franknet_lotto\\data\\analysis\\single_cell\\MILANO_pos1_y1900_series.csv"
+      ],
+      "exit_code": 0,
+      "seconds": 1.033,
+      "status": "ok"
+    },
+    {
+      "name": "longterm_distribution",
+      "script": "longterm_distribution_windows.py",
+      "args": [],
+      "exit_code": 0,
+      "seconds": 0.636,
+      "status": "ok"
+    }
+  ],
+  "artifacts": {
+    "coupon_cycle_analysis": {
+      "digit_stream": {
+        "length": 10823,
+        "chi2_uniform_0_to_9": 6.3218,
+        "chi2_df": 9,
+        "lag1_autocorr": 0.018625,
+        "two_halves_homogeneity_chi2": 6.4193,
+        "two_halves_df": 9,
+        "perm_null_chi2_iid_uniform_digits": {
+          "reps": 499,
+          "fraction_null_ge_observed": 0.6754,
+          "two_sided_p_approx": 0.6493
+        },
+        "perm_null_lag1_autocorr_abs": {
+          "reps": 499,
+          "fraction_null_abs_ge_observed": 0.0541
+        }
+      },
+      "cycle_lengths": {
+        "n_completed_cycles": 1104,
+        "mean": 9.7998,
+        "std": 2.7281,
+        "min": 5,
+        "max": 29,
+        "corr_cycle_index_vs_length": -0.436221,
+        "lag1_autocorr_lengths": 0.238108,
+        "perm_null_length_lag1_ac": {
+          "reps": 299,
+          "fraction_null_ge_observed": 0.0
+        }
+      },
+      "interpretation": "Chi2 vs Uniform(0..9) i.i.d.: confronto con stream simulati; lag1-autocorr reale vs permutazioni (stesso multiset). Corr(indice_ciclo, lunghezza) negativa spesso riflette cambi di formato storico (piu numeri per estrazione nel tempo => cicli piu corti), non un segnale casuale."
+    },
+    "first_hit_summary": {
+      "n_completed_cycles": 1104,
+      "chain_rule": "chained[0]=order[0]+1; chained[i]=chained[i-1]+order[i]",
+      "first_hit_order": "per ciclo, ordine di prima comparsa 1..90; ordine lettura = ordine colonne CSV",
+      "duplicates_within_same_draw": {
+        "total_excess_ball_duplicates": 109834,
+        "draw_rows_total": 10823,
+        "draw_rows_with_any_duplicate": 10823,
+        "fraction_draws_with_duplicate": 1.0,
+        "note": "Con ~55 numeri per estrazione su 90 etichette, lo stesso valore compare quasi sempre su piu ruote: non e anomalia."
+      },
+      "entropy_by_step": {
+        "lowest_entropy_steps_most_concentrated_marginal": [
+          {
+            "step": 6,
+            "n_cycles": 1104,
+            "entropy_bits": 6.411638,
+            "max_entropy_bits": 6.491853,
+            "ratio": 0.987644
+          },
+          {
+            "step": 1,
+            "n_cycles": 1104,
+            "entropy_bits": 6.414153,
+            "max_entropy_bits": 6.491853,
+            "ratio": 0.988031
+          },
+          {
+            "step": 8,
+            "n_cycles": 1104,
+            "entropy_bits": 6.416597,
+            "max_entropy_bits": 6.491853,
+            "ratio": 0.988408
+          },
+          {
+            "step": 72,
+            "n_cycles": 1104,
+            "entropy_bits": 6.417493,
+            "max_entropy_bits": 6.491853,
+            "ratio": 0.988546
+          },
+          {
+            "step": 68,
+            "n_cycles": 1104,
+            "entropy_bits": 6.419036,
+            "max_entropy_bits": 6.491853,
+            "ratio": 0.988783
+          }
+        ],
+        "highest_entropy_steps": [
+          {
+            "step": 60,
+            "n_cycles": 1104,
+            "entropy_bits": 6.446513,
+            "max_entropy_bits": 6.491853,
+            "ratio": 0.993016
+          },
+          {
+            "step": 45,
+            "n_cycles": 1104,
+            "entropy_bits": 6.447112,
+            "max_entropy_bits": 6.491853,
+            "ratio": 0.993108
+          },
+          {
+            "step": 78,
+            "n_cycles": 1104,
+            "entropy_bits": 6.447226,
+            "max_entropy_bits": 6.491853,
+            "ratio": 0.993126
+          },
+          {
+            "step": 4,
+            "n_cycles": 1104,
+            "entropy_bits": 6.44728,
+            "max_entropy_bits": 6.491853,
+            "ratio": 0.993134
+          },
+          {
+            "step": 50,
+            "n_cycles": 1104,
+            "entropy_bits": 6.454642,
+            "max_entropy_bits": 6.491853,
+            "ratio": 0.994268
+          }
+        ],
+        "note": "Bassa entropia = distribuzione empirica piu stretta sui cicli osservati; non e prova di modello causale."
+      },
+      "files": {
+        "steps": "first_hit_steps.csv",
+        "entropy_by_step": "entropy_by_step.csv",
+        "transition_decile": "transition_decile_next.csv",
+        "mean_std_by_step": "mean_std_by_step.csv",
+        "duplicates_per_draw": "duplicates_per_draw.csv"
+      }
+    },
+    "heavy_null": {
+      "tier": "quick",
+      "monte_carlo": {
+        "digit_chi2_observed": 6.321815,
+        "digit_mc_reps": 2000,
+        "p_value_digit": 0.718641,
+        "transitions_pooled": 98256,
+        "trans_chi2_observed": 194.567235,
+        "trans_perm_reps": 800,
+        "p_value_transition": 0.001248
+      },
+      "benjamini_hochberg_fdr_0.05": [
+        {
+          "name": "digit_stream_chi2_vs_iid_uniform",
+          "p_value": 0.718641,
+          "adjusted_p": 0.718641,
+          "reject": false
+        },
+        {
+          "name": "decile_transition_chi2_perm_independence",
+          "p_value": 0.001248,
+          "adjusted_p": 0.002497,
+          "reject": true
+        }
+      ],
+      "interpretation": "Stream cifre (sum mod 10): chi2 non estremo vs i.i.d. uniforme (p_MC non piccolo). Transizioni decile->decile: il chi2 osservato supera quasi tutti i null permutati; associazione residua from->to oltre i margini (o violazione delle ipotesi del test). BH-FDR q=0.05: 1 test rigettato/i su 2 (vedi reject per nome)."
+    },
+    "structure_sieve": {
+      "disclaimer": "Non è decrittazione. I p-value sono nominali; con molte metriche ci si aspetta falsi positivi ~5% sotto nulla. Usare Bonferroni o FDR.",
+      "series": {
+        "wheel": "MILANO",
+        "position": 1,
+        "mode": "n",
+        "from_year": 1900,
+        "n": 9309
+      },
+      "null": {
+        "reps": 199,
+        "method": "iid_permutation"
+      },
+      "metrics": [
+        {
+          "metric": "lag1_autocorr",
+          "value_on_data": 0.009773,
+          "p_value_two_sided_perm": 0.41206,
+          "percentile_rank_le": 79.4
+        },
+        {
+          "metric": "spectral_peak_ratio",
+          "value_on_data": 0.006972,
+          "p_value_two_sided_perm": 0.01005,
+          "percentile_rank_le": 0.5
+        },
+        {
+          "metric": "higuchi_fractal_dim",
+          "value_on_data": 1.001088,
+          "p_value_two_sided_perm": 0.41206,
+          "percentile_rank_le": 79.4
+        },
+        {
+          "metric": "hurst_rs",
+          "value_on_data": 0.551295,
+          "p_value_two_sided_perm": 0.301508,
+          "percentile_rank_le": 84.92
+        },
+        {
+          "metric": "dfa_alpha",
+          "value_on_data": 0.512319,
+          "p_value_two_sided_perm": 0.542714,
+          "percentile_rank_le": 72.86
+        },
+        {
+          "metric": "runs_z_above_median",
+          "value_on_data": -0.155448,
+          "p_value_two_sided_perm": 0.934673,
+          "percentile_rank_le": 46.73
+        },
+        {
+          "metric": "diff_variance_ratio",
+          "value_on_data": 1.980659,
+          "p_value_two_sided_perm": 0.261307,
+          "percentile_rank_le": 13.07
+        },
+        {
+          "metric": "skew_kurtosis_gap",
+          "value_on_data": 1.228546,
+          "p_value_two_sided_perm": 1.0,
+          "percentile_rank_le": 55.78
+        }
+      ],
+      "summary": {
+        "n_metrics": 8,
+        "nominal_p_lt_0.05_count": 1,
+        "nominal_p_lt_0.01_count": 0,
+        "bonferroni_alpha_0.05_per_test": 0.00625,
+        "metrics_below_bonferroni_0.05": 0
+      }
+    },
+    "discover_structure": {
+      "input_csv": "MILANO_pos1_y1900_series.csv",
+      "train_ratio": 0.8,
+      "lengths": {
+        "n": 9309,
+        "diff_signed": 9308,
+        "digital_root": 9309
+      },
+      "markov": [
+        {
+          "name": "digital_root",
+          "order": 0,
+          "alphabet_size": 9,
+          "train_n": 7447,
+          "test_n": 1862,
+          "accuracy": 0.11546723952738991,
+          "baseline_majority_accuracy": 0.11546723952738991,
+          "description": "Markov order 0 (marginal mode) on digital_root"
+        },
+        {
+          "name": "digital_root",
+          "order": 1,
+          "alphabet_size": 9,
+          "train_n": 7447,
+          "test_n": 1862,
+          "accuracy": 0.11385606874328678,
+          "baseline_majority_accuracy": 0.11546723952738991,
+          "description": "Markov order 1 on digital_root"
+        },
+        {
+          "name": "digital_root",
+          "order": 2,
+          "alphabet_size": 9,
+          "train_n": 7447,
+          "test_n": 1862,
+          "accuracy": 0.12298603651987111,
+          "baseline_majority_accuracy": 0.11546723952738991,
+          "description": "Markov order 2 on digital_root"
+        },
+        {
+          "name": "digital_root",
+          "order": 3,
+          "alphabet_size": 9,
+          "train_n": 7447,
+          "test_n": 1862,
+          "accuracy": 0.11170784103114931,
+          "baseline_majority_accuracy": 0.11546723952738991,
+          "description": "Markov order 3 on digital_root"
+        },
+        {
+          "name": "digit_sum",
+          "order": 1,
+          "alphabet_size": 17,
+          "train_n": 7447,
+          "test_n": 1862,
+          "accuracy": 0.1004296455424275,
+          "baseline_majority_accuracy": 0.10150375939849623,
+          "description": "Markov order 1 on digit_sum"
+        },
+        {
+          "name": "digit_sum",
+          "order": 2,
+          "alphabet_size": 17,
+          "train_n": 7447,
+          "test_n": 1862,
+          "accuracy": 0.09129967776584318,
+          "baseline_majority_accuracy": 0.10150375939849623,
+          "description": "Markov order 2 on digit_sum"
+        },
+        {
+          "name": "diff_signed_q12",
+          "order": 1,
+          "alphabet_size": 12,
+          "train_n": 7446,
+          "test_n": 1862,
+          "accuracy": 0.14446831364124596,
+          "baseline_majority_accuracy": 0.08485499462943072,
+          "description": "Markov order 1 on diff_signed_q12"
+        },
+        {
+          "name": "diff_signed_q12",
+          "order": 2,
+          "alphabet_size": 12,
+          "train_n": 7446,
+          "test_n": 1862,
+          "accuracy": 0.1476906552094522,
+          "baseline_majority_accuracy": 0.08485499462943072,
+          "description": "Markov order 2 on diff_signed_q12"
+        },
+        {
+          "name": "n_mod10",
+          "order": 1,
+          "alphabet_size": 10,
+          "train_n": 7447,
+          "test_n": 1862,
+          "accuracy": 0.1041890440386681,
+          "baseline_majority_accuracy": 0.09989258861439312,
+          "description": "Markov order 1 on n_mod10"
+        },
+        {
+          "name": "n_mod10",
+          "order": 2,
+          "alphabet_size": 10,
+          "train_n": 7447,
+          "test_n": 1862,
+          "accuracy": 0.10526315789473684,
+          "baseline_majority_accuracy": 0.09989258861439312,
+          "description": "Markov order 2 on n_mod10"
+        },
+        {
+          "name": "n_mod10",
+          "order": 3,
+          "alphabet_size": 10,
+          "train_n": 7447,
+          "test_n": 1862,
+          "accuracy": 0.10741138560687433,
+          "baseline_majority_accuracy": 0.09989258861439312,
+          "description": "Markov order 3 on n_mod10"
+        }
+      ],
+      "ar1_on_raw_n": {
+        "a": 0.008346,
+        "b": 45.250927,
+        "train_r2": 7e-05,
+        "test_mae_ar1": 22.7857,
+        "test_mae_predict_mean": 22.7871,
+        "test_n": 1862
+      },
+      "motifs_diff_signed_len2to4_min3": [
+        {
+          "length": 2,
+          "count": 6,
+          "pattern": [
+            0,
+            -2
+          ]
+        },
+        {
+          "length": 2,
+          "count": 6,
+          "pattern": [
+            15,
+            -2
+          ]
+        },
+        {
+          "length": 2,
+          "count": 5,
+          "pattern": [
+            -22,
+            21
+          ]
+        },
+        {
+          "length": 2,
+          "count": 5,
+          "pattern": [
+            -10,
+            1
+          ]
+        },
+        {
+          "length": 2,
+          "count": 5,
+          "pattern": [
+            -7,
+            -4
+          ]
+        },
+        {
+          "length": 2,
+          "count": 5,
+          "pattern": [
+            7,
+            28
+          ]
+        },
+        {
+          "length": 2,
+          "count": 5,
+          "pattern": [
+            17,
+            19
+          ]
+        },
+        {
+          "length": 2,
+          "count": 5,
+          "pattern": [
+            23,
+            4
+          ]
+        },
+        {
+          "length": 2,
+          "count": 5,
+          "pattern": [
+            27,
+            -14
+          ]
+        },
+        {
+          "length": 2,
+          "count": 4,
+          "pattern": [
+            -55,
+            -2
+          ]
+        },
+        {
+          "length": 2,
+          "count": 4,
+          "pattern": [
+            -54,
+            44
+          ]
+        },
+        {
+          "length": 2,
+          "count": 4,
+          "pattern": [
+            -52,
+            1
+          ]
+        },
+        {
+          "length": 2,
+          "count": 4,
+          "pattern": [
+            -43,
+            -9
+          ]
+        },
+        {
+          "length": 2,
+          "count": 4,
+          "pattern": [
+            -39,
+            39
+          ]
+        },
+        {
+          "length": 2,
+          "count": 4,
+          "pattern": [
+            -38,
+            37
+          ]
+        },
+        {
+          "length": 2,
+          "count": 4,
+          "pattern": [
+            -36,
+            0
+          ]
+        },
+        {
+          "length": 2,
+          "count": 4,
+          "pattern": [
+            -36,
+            9
+          ]
+        },
+        {
+          "length": 2,
+          "count": 4,
+          "pattern": [
+            -29,
+            3
+          ]
+        },
+        {
+          "length": 2,
+          "count": 4,
+          "pattern": [
+            -26,
+            12
+          ]
+        },
+        {
+          "length": 2,
+          "count": 4,
+          "pattern": [
+            -20,
+            31
+          ]
+        },
+        {
+          "length": 2,
+          "count": 4,
+          "pattern": [
+            -19,
+            0
+          ]
+        },
+        {
+          "length": 2,
+          "count": 4,
+          "pattern": [
+            -19,
+            5
+          ]
+        },
+        {
+          "length": 2,
+          "count": 4,
+          "pattern": [
+            -18,
+            7
+          ]
+        },
+        {
+          "length": 2,
+          "count": 4,
+          "pattern": [
+            -16,
+            0
+          ]
+        },
+        {
+          "length": 2,
+          "count": 4,
+          "pattern": [
+            -13,
+            13
+          ]
+        }
+      ],
+      "motifs_digital_root_len3to5_min3": [
+        {
+          "length": 5,
+          "count": 4,
+          "pattern": [
+            1,
+            8,
+            9,
+            7,
+            1
+          ]
+        },
+        {
+          "length": 5,
+          "count": 4,
+          "pattern": [
+            2,
+            7,
+            3,
+            3,
+            8
+          ]
+        },
+        {
+          "length": 5,
+          "count": 4,
+          "pattern": [
+            4,
+            5,
+            1,
+            8,
+            5
+          ]
+        },
+        {
+          "length": 5,
+          "count": 4,
+          "pattern": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        {
+          "length": 5,
+          "count": 4,
+          "pattern": [
+            6,
+            8,
+            9,
+            7,
+            9
+          ]
+        },
+        {
+          "length": 5,
+          "count": 3,
+          "pattern": [
+            1,
+            1,
+            6,
+            8,
+            1
+          ]
+        },
+        {
+          "length": 5,
+          "count": 3,
+          "pattern": [
+            1,
+            8,
+            5,
+            4,
+            3
+          ]
+        },
+        {
+          "length": 5,
+          "count": 3,
+          "pattern": [
+            2,
+            1,
+            4,
+            4,
+            5
+          ]
+        },
+        {
+          "length": 5,
+          "count": 3,
+          "pattern": [
+            2,
+            8,
+            1,
+            5,
+            8
+          ]
+        },
+        {
+          "length": 5,
+          "count": 3,
+          "pattern": [
+            3,
+            2,
+            7,
+            2,
+            5
+          ]
+        },
+        {
+          "length": 5,
+          "count": 3,
+          "pattern": [
+            3,
+            7,
+            1,
+            2,
+            5
+          ]
+        },
+        {
+          "length": 5,
+          "count": 3,
+          "pattern": [
+            3,
+            7,
+            5,
+            1,
+            2
+          ]
+        },
+        {
+          "length": 5,
+          "count": 3,
+          "pattern": [
+            4,
+            5,
+            7,
+            8,
+            5
+          ]
+        },
+        {
+          "length": 5,
+          "count": 3,
+          "pattern": [
+            4,
+            7,
+            7,
+            5,
+            4
+          ]
+        },
+        {
+          "length": 5,
+          "count": 3,
+          "pattern": [
+            5,
+            1,
+            8,
+            5,
+            5
+          ]
+        },
+        {
+          "length": 5,
+          "count": 3,
+          "pattern": [
+            5,
+            5,
+            3,
+            1,
+            1
+          ]
+        },
+        {
+          "length": 5,
+          "count": 3,
+          "pattern": [
+            5,
+            5,
+            4,
+            8,
+            6
+          ]
+        },
+        {
+          "length": 5,
+          "count": 3,
+          "pattern": [
+            5,
+            5,
+            5,
+            4,
+            6
+          ]
+        },
+        {
+          "length": 5,
+          "count": 3,
+          "pattern": [
+            6,
+            3,
+            3,
+            8,
+            5
+          ]
+        },
+        {
+          "length": 5,
+          "count": 3,
+          "pattern": [
+            6,
+            5,
+            5,
+            3,
+            9
+          ]
+        },
+        {
+          "length": 5,
+          "count": 3,
+          "pattern": [
+            6,
+            7,
+            3,
+            9,
+            2
+          ]
+        },
+        {
+          "length": 5,
+          "count": 3,
+          "pattern": [
+            6,
+            8,
+            8,
+            1,
+            9
+          ]
+        },
+        {
+          "length": 5,
+          "count": 3,
+          "pattern": [
+            6,
+            9,
+            7,
+            2,
+            8
+          ]
+        },
+        {
+          "length": 5,
+          "count": 3,
+          "pattern": [
+            7,
+            1,
+            6,
+            6,
+            4
+          ]
+        },
+        {
+          "length": 5,
+          "count": 3,
+          "pattern": [
+            7,
+            4,
+            1,
+            6,
+            9
+          ]
+        }
+      ],
+      "shuffle_null_markov1_digital_root": {
+        "real_gain_over_majority": -0.001611,
+        "shuffle_gains_min_median_max": [
+          -0.030075,
+          -0.003759,
+          0.017723
+        ],
+        "real_gain_exceeds_shuffle_fraction": 0.625,
+        "n_shuffles": 40,
+        "note": "If real_gain is not above most shuffles, Markov signal is weak."
+      },
+      "shuffle_null_markov2_diff_q12": {
+        "real_gain_over_majority": 0.062836,
+        "shuffle_gains_min_median_max": [
+          -0.017723,
+          -0.003759,
+          0.015575
+        ],
+        "real_gain_exceeds_shuffle_fraction": 1.0,
+        "n_shuffles": 40,
+        "note": "If real_gain is not above most shuffles, Markov signal is weak."
+      },
+      "interpretation": "Strong structure would show: large real_gain over majority with shuffle_null showing real_gain above most shuffles; AR(1) test MAE clearly below predict-mean; motifs may still appear by chance on long strings."
+    },
+    "ml_boosted": {
+      "wheel": "MILANO",
+      "target_position": 1,
+      "from_year": 1900,
+      "lag_draws": 5,
+      "n_train": 7908,
+      "n_test": 1396,
+      "hist_gradient_boosting": {
+        "accuracy": 0.118195,
+        "log_loss": 2.222198
+      },
+      "random_forest": {
+        "accuracy": 0.104585,
+        "log_loss": 2.204717,
+        "top_feature_importances": [
+          {
+            "feature": "lag1_p5_n",
+            "importance": 0.027454
+          },
+          {
+            "feature": "lag5_p1_n",
+            "importance": 0.027195
+          },
+          {
+            "feature": "lag2_p2_n",
+            "importance": 0.027191
+          },
+          {
+            "feature": "lag3_p4_n",
+            "importance": 0.027143
+          },
+          {
+            "feature": "lag3_p1_n",
+            "importance": 0.02649
+          },
+          {
+            "feature": "lag5_p5_n",
+            "importance": 0.026257
+          },
+          {
+            "feature": "lag1_p4_n",
+            "importance": 0.026007
+          },
+          {
+            "feature": "lag1_p1_n",
+            "importance": 0.025976
+          },
+          {
+            "feature": "lag2_p5_n",
+            "importance": 0.025945
+          },
+          {
+            "feature": "lag2_p3_n",
+            "importance": 0.025944
+          },
+          {
+            "feature": "lag2_p1_n",
+            "importance": 0.025762
+          },
+          {
+            "feature": "lag5_p3_n",
+            "importance": 0.025686
+          },
+          {
+            "feature": "lag5_p2_n",
+            "importance": 0.025633
+          },
+          {
+            "feature": "lag4_p2_n",
+            "importance": 0.025534
+          },
+          {
+            "feature": "lag3_p5_n",
+            "importance": 0.025382
+          },
+          {
+            "feature": "lag1_p3_n",
+            "importance": 0.025377
+          },
+          {
+            "feature": "lag4_p5_n",
+            "importance": 0.025373
+          },
+          {
+            "feature": "lag2_p4_n",
+            "importance": 0.025299
+          },
+          {
+            "feature": "lag4_p4_n",
+            "importance": 0.025208
+          },
+          {
+            "feature": "lag3_p3_n",
+            "importance": 0.025202
+          },
+          {
+            "feature": "lag1_p2_n",
+            "importance": 0.025144
+          },
+          {
+            "feature": "lag5_p4_n",
+            "importance": 0.025038
+          },
+          {
+            "feature": "lag3_p2_n",
+            "importance": 0.024981
+          },
+          {
+            "feature": "lag4_p1_n",
+            "importance": 0.024978
+          },
+          {
+            "feature": "lag4_p3_n",
+            "importance": 0.024626
+          }
+        ]
+      },
+      "dummy_most_frequent_accuracy": 0.110315,
+      "dummy_stratified_marginals_accuracy": 0.108166,
+      "uniform_proba_log_loss": 2.197225,
+      "uniform_random_guess_log_loss_theory": 2.197225,
+      "boosting_log_loss_minus_uniform": 0.024973,
+      "random_forest_log_loss_minus_uniform": 0.007493,
+      "hist_gboost_top_importances": []
+    },
+    "digital_root_summary": {
+      "wheel": "MILANO",
+      "from_year": 1900,
+      "n_draws": 9309,
+      "positions": {
+        "pos1": {
+          "walkforward_final_acc_markov1": 0.108738,
+          "walkforward_final_acc_markov2": 0.11758,
+          "walkforward_baseline_global_mode": 0.11046,
+          "uniform_baseline_acc": 0.111111,
+          "decade_chi2": 100.0203,
+          "decade_chi2_df": 96,
+          "decade_labels": [
+            "1900s",
+            "1910s",
+            "1920s",
+            "1930s",
+            "1940s",
+            "1950s",
+            "1960s",
+            "1970s",
+            "1980s",
+            "1990s",
+            "2000s",
+            "2010s",
+            "2020s"
+          ]
+        },
+        "pos2": {
+          "walkforward_final_acc_markov1": 0.109197,
+          "walkforward_final_acc_markov2": 0.10759,
+          "walkforward_baseline_global_mode": 0.10426,
+          "uniform_baseline_acc": 0.111111,
+          "decade_chi2": 96.0823,
+          "decade_chi2_df": 96,
+          "decade_labels": [
+            "1900s",
+            "1910s",
+            "1920s",
+            "1930s",
+            "1940s",
+            "1950s",
+            "1960s",
+            "1970s",
+            "1980s",
+            "1990s",
+            "2000s",
+            "2010s",
+            "2020s"
+          ]
+        },
+        "pos3": {
+          "walkforward_final_acc_markov1": 0.110805,
+          "walkforward_final_acc_markov2": 0.107131,
+          "walkforward_baseline_global_mode": 0.108968,
+          "uniform_baseline_acc": 0.111111,
+          "decade_chi2": 91.4447,
+          "decade_chi2_df": 96,
+          "decade_labels": [
+            "1900s",
+            "1910s",
+            "1920s",
+            "1930s",
+            "1940s",
+            "1950s",
+            "1960s",
+            "1970s",
+            "1980s",
+            "1990s",
+            "2000s",
+            "2010s",
+            "2020s"
+          ]
+        },
+        "pos4": {
+          "walkforward_final_acc_markov1": 0.110116,
+          "walkforward_final_acc_markov2": 0.107245,
+          "walkforward_baseline_global_mode": 0.113676,
+          "uniform_baseline_acc": 0.111111,
+          "decade_chi2": 125.7023,
+          "decade_chi2_df": 96,
+          "decade_labels": [
+            "1900s",
+            "1910s",
+            "1920s",
+            "1930s",
+            "1940s",
+            "1950s",
+            "1960s",
+            "1970s",
+            "1980s",
+            "1990s",
+            "2000s",
+            "2010s",
+            "2020s"
+          ]
+        },
+        "pos5": {
+          "walkforward_final_acc_markov1": 0.107245,
+          "walkforward_final_acc_markov2": 0.103801,
+          "walkforward_baseline_global_mode": 0.111609,
+          "uniform_baseline_acc": 0.111111,
+          "decade_chi2": 91.6178,
+          "decade_chi2_df": 96,
+          "decade_labels": [
+            "1900s",
+            "1910s",
+            "1920s",
+            "1930s",
+            "1940s",
+            "1950s",
+            "1960s",
+            "1970s",
+            "1980s",
+            "1990s",
+            "2000s",
+            "2010s",
+            "2020s"
+          ]
+        }
+      },
+      "joint_5tuple_note": "Top counts are descriptive; expected repetition under simple nulls is low."
+    }
+  },
+  "disclaimer": "Report aggregato: nessuna conclusione di prevedibilita senza validazione prospettica; i p-value sono quelli prodotti dagli script citati.",
+  "finished_utc": "2026-03-20T01:32:22.015348+00:00",
+  "phases_summary": {
+    "ok": 9,
+    "failed": 0,
+    "total_seconds": 78.799
+  }
+}

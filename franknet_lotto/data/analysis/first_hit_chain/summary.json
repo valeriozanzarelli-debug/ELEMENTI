@@ -1,0 +1,96 @@
+{
+  "n_completed_cycles": 1104,
+  "chain_rule": "chained[0]=order[0]+1; chained[i]=chained[i-1]+order[i]",
+  "first_hit_order": "per ciclo, ordine di prima comparsa 1..90; ordine lettura = ordine colonne CSV",
+  "duplicates_within_same_draw": {
+    "total_excess_ball_duplicates": 109834,
+    "draw_rows_total": 10823,
+    "draw_rows_with_any_duplicate": 10823,
+    "fraction_draws_with_duplicate": 1.0,
+    "note": "Con ~55 numeri per estrazione su 90 etichette, lo stesso valore compare quasi sempre su piu ruote: non e anomalia."
+  },
+  "entropy_by_step": {
+    "lowest_entropy_steps_most_concentrated_marginal": [
+      {
+        "step": 6,
+        "n_cycles": 1104,
+        "entropy_bits": 6.411638,
+        "max_entropy_bits": 6.491853,
+        "ratio": 0.987644
+      },
+      {
+        "step": 1,
+        "n_cycles": 1104,
+        "entropy_bits": 6.414153,
+        "max_entropy_bits": 6.491853,
+        "ratio": 0.988031
+      },
+      {
+        "step": 8,
+        "n_cycles": 1104,
+        "entropy_bits": 6.416597,
+        "max_entropy_bits": 6.491853,
+        "ratio": 0.988408
+      },
+      {
+        "step": 72,
+        "n_cycles": 1104,
+        "entropy_bits": 6.417493,
+        "max_entropy_bits": 6.491853,
+        "ratio": 0.988546
+      },
+      {
+        "step": 68,
+        "n_cycles": 1104,
+        "entropy_bits": 6.419036,
+        "max_entropy_bits": 6.491853,
+        "ratio": 0.988783
+      }
+    ],
+    "highest_entropy_steps": [
+      {
+        "step": 60,
+        "n_cycles": 1104,
+        "entropy_bits": 6.446513,
+        "max_entropy_bits": 6.491853,
+        "ratio": 0.993016
+      },
+      {
+        "step": 45,
+        "n_cycles": 1104,
+        "entropy_bits": 6.447112,
+        "max_entropy_bits": 6.491853,
+        "ratio": 0.993108
+      },
+      {
+        "step": 78,
+        "n_cycles": 1104,
+        "entropy_bits": 6.447226,
+        "max_entropy_bits": 6.491853,
+        "ratio": 0.993126
+      },
+      {
+        "step": 4,
+        "n_cycles": 1104,
+        "entropy_bits": 6.44728,
+        "max_entropy_bits": 6.491853,
+        "ratio": 0.993134
+      },
+      {
+        "step": 50,
+        "n_cycles": 1104,
+        "entropy_bits": 6.454642,
+        "max_entropy_bits": 6.491853,
+        "ratio": 0.994268
+      }
+    ],
+    "note": "Bassa entropia = distribuzione empirica piu stretta sui cicli osservati; non e prova di modello causale."
+  },
+  "files": {
+    "steps": "first_hit_steps.csv",
+    "entropy_by_step": "entropy_by_step.csv",
+    "transition_decile": "transition_decile_next.csv",
+    "mean_std_by_step": "mean_std_by_step.csv",
+    "duplicates_per_draw": "duplicates_per_draw.csv"
+  }
+}

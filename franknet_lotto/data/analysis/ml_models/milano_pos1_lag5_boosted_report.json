@@ -1,0 +1,125 @@
+{
+  "wheel": "MILANO",
+  "target_position": 1,
+  "from_year": 1900,
+  "lag_draws": 5,
+  "n_train": 7908,
+  "n_test": 1396,
+  "hist_gradient_boosting": {
+    "accuracy": 0.118195,
+    "log_loss": 2.222198
+  },
+  "random_forest": {
+    "accuracy": 0.104585,
+    "log_loss": 2.204717,
+    "top_feature_importances": [
+      {
+        "feature": "lag1_p5_n",
+        "importance": 0.027454
+      },
+      {
+        "feature": "lag5_p1_n",
+        "importance": 0.027195
+      },
+      {
+        "feature": "lag2_p2_n",
+        "importance": 0.027191
+      },
+      {
+        "feature": "lag3_p4_n",
+        "importance": 0.027143
+      },
+      {
+        "feature": "lag3_p1_n",
+        "importance": 0.02649
+      },
+      {
+        "feature": "lag5_p5_n",
+        "importance": 0.026257
+      },
+      {
+        "feature": "lag1_p4_n",
+        "importance": 0.026007
+      },
+      {
+        "feature": "lag1_p1_n",
+        "importance": 0.025976
+      },
+      {
+        "feature": "lag2_p5_n",
+        "importance": 0.025945
+      },
+      {
+        "feature": "lag2_p3_n",
+        "importance": 0.025944
+      },
+      {
+        "feature": "lag2_p1_n",
+        "importance": 0.025762
+      },
+      {
+        "feature": "lag5_p3_n",
+        "importance": 0.025686
+      },
+      {
+        "feature": "lag5_p2_n",
+        "importance": 0.025633
+      },
+      {
+        "feature": "lag4_p2_n",
+        "importance": 0.025534
+      },
+      {
+        "feature": "lag3_p5_n",
+        "importance": 0.025382
+      },
+      {
+        "feature": "lag1_p3_n",
+        "importance": 0.025377
+      },
+      {
+        "feature": "lag4_p5_n",
+        "importance": 0.025373
+      },
+      {
+        "feature": "lag2_p4_n",
+        "importance": 0.025299
+      },
+      {
+        "feature": "lag4_p4_n",
+        "importance": 0.025208
+      },
+      {
+        "feature": "lag3_p3_n",
+        "importance": 0.025202
+      },
+      {
+        "feature": "lag1_p2_n",
+        "importance": 0.025144
+      },
+      {
+        "feature": "lag5_p4_n",
+        "importance": 0.025038
+      },
+      {
+        "feature": "lag3_p2_n",
+        "importance": 0.024981
+      },
+      {
+        "feature": "lag4_p1_n",
+        "importance": 0.024978
+      },
+      {
+        "feature": "lag4_p3_n",
+        "importance": 0.024626
+      }
+    ]
+  },
+  "dummy_most_frequent_accuracy": 0.110315,
+  "dummy_stratified_marginals_accuracy": 0.108166,
+  "uniform_proba_log_loss": 2.197225,
+  "uniform_random_guess_log_loss_theory": 2.197225,
+  "boosting_log_loss_minus_uniform": 0.024973,
+  "random_forest_log_loss_minus_uniform": 0.007493,
+  "hist_gboost_top_importances": []
+}

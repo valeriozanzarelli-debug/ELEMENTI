@@ -1,0 +1,123 @@
+{
+  "wheel": "MILANO",
+  "from_year": 1900,
+  "n_draws": 9309,
+  "positions": {
+    "pos1": {
+      "walkforward_final_acc_markov1": 0.108738,
+      "walkforward_final_acc_markov2": 0.11758,
+      "walkforward_baseline_global_mode": 0.11046,
+      "uniform_baseline_acc": 0.111111,
+      "decade_chi2": 100.0203,
+      "decade_chi2_df": 96,
+      "decade_labels": [
+        "1900s",
+        "1910s",
+        "1920s",
+        "1930s",
+        "1940s",
+        "1950s",
+        "1960s",
+        "1970s",
+        "1980s",
+        "1990s",
+        "2000s",
+        "2010s",
+        "2020s"
+      ]
+    },
+    "pos2": {
+      "walkforward_final_acc_markov1": 0.109197,
+      "walkforward_final_acc_markov2": 0.10759,
+      "walkforward_baseline_global_mode": 0.10426,
+      "uniform_baseline_acc": 0.111111,
+      "decade_chi2": 96.0823,
+      "decade_chi2_df": 96,
+      "decade_labels": [
+        "1900s",
+        "1910s",
+        "1920s",
+        "1930s",
+        "1940s",
+        "1950s",
+        "1960s",
+        "1970s",
+        "1980s",
+        "1990s",
+        "2000s",
+        "2010s",
+        "2020s"
+      ]
+    },
+    "pos3": {
+      "walkforward_final_acc_markov1": 0.110805,
+      "walkforward_final_acc_markov2": 0.107131,
+      "walkforward_baseline_global_mode": 0.108968,
+      "uniform_baseline_acc": 0.111111,
+      "decade_chi2": 91.4447,
+      "decade_chi2_df": 96,
+      "decade_labels": [
+        "1900s",
+        "1910s",
+        "1920s",
+        "1930s",
+        "1940s",
+        "1950s",
+        "1960s",
+        "1970s",
+        "1980s",
+        "1990s",
+        "2000s",
+        "2010s",
+        "2020s"
+      ]
+    },
+    "pos4": {
+      "walkforward_final_acc_markov1": 0.110116,
+      "walkforward_final_acc_markov2": 0.107245,
+      "walkforward_baseline_global_mode": 0.113676,
+      "uniform_baseline_acc": 0.111111,
+      "decade_chi2": 125.7023,
+      "decade_chi2_df": 96,
+      "decade_labels": [
+        "1900s",
+        "1910s",
+        "1920s",
+        "1930s",
+        "1940s",
+        "1950s",
+        "1960s",
+        "1970s",
+        "1980s",
+        "1990s",
+        "2000s",
+        "2010s",
+        "2020s"
+      ]
+    },
+    "pos5": {
+      "walkforward_final_acc_markov1": 0.107245,
+      "walkforward_final_acc_markov2": 0.103801,
+      "walkforward_baseline_global_mode": 0.111609,
+      "uniform_baseline_acc": 0.111111,
+      "decade_chi2": 91.6178,
+      "decade_chi2_df": 96,
+      "decade_labels": [
+        "1900s",
+        "1910s",
+        "1920s",
+        "1930s",
+        "1940s",
+        "1950s",
+        "1960s",
+        "1970s",
+        "1980s",
+        "1990s",
+        "2000s",
+        "2010s",
+        "2020s"
+      ]
+    }
+  },
+  "joint_5tuple_note": "Top counts are descriptive; expected repetition under simple nulls is low."
+}

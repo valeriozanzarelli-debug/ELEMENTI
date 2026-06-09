@@ -1,0 +1,638 @@
+﻿{
+    "source":  "https://www.franknet.altervista.org/lotto/page.php",
+    "yearFiles":  156,
+    "years":  [
+                  {
+                      "bytes":  13069,
+                      "name":  "1871.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1872.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1873.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1874.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1875.HTM"
+                  },
+                  {
+                      "bytes":  13242,
+                      "name":  "1876.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1877.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1878.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1879.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1880.HTM"
+                  },
+                  {
+                      "bytes":  13242,
+                      "name":  "1881.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1882.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1883.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1884.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1885.HTM"
+                  },
+                  {
+                      "bytes":  13242,
+                      "name":  "1886.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1887.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1888.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1889.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1890.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1891.HTM"
+                  },
+                  {
+                      "bytes":  13242,
+                      "name":  "1892.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1893.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1894.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1895.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1896.HTM"
+                  },
+                  {
+                      "bytes":  13242,
+                      "name":  "1897.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1898.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1899.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1900.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1901.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1902.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1903.HTM"
+                  },
+                  {
+                      "bytes":  13242,
+                      "name":  "1904.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1905.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1906.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1907.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1908.HTM"
+                  },
+                  {
+                      "bytes":  13242,
+                      "name":  "1909.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1910.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1911.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1912.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1913.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1914.HTM"
+                  },
+                  {
+                      "bytes":  13242,
+                      "name":  "1915.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1916.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1917.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1918.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1919.HTM"
+                  },
+                  {
+                      "bytes":  13242,
+                      "name":  "1920.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1921.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1922.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1923.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1924.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1925.HTM"
+                  },
+                  {
+                      "bytes":  13242,
+                      "name":  "1926.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1927.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1928.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1929.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1930.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1931.HTM"
+                  },
+                  {
+                      "bytes":  13242,
+                      "name":  "1932.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1933.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1934.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1935.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1936.HTM"
+                  },
+                  {
+                      "bytes":  13242,
+                      "name":  "1937.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1938.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1939.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1940.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1941.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1942.HTM"
+                  },
+                  {
+                      "bytes":  13242,
+                      "name":  "1943.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1944.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1945.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1946.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1947.HTM"
+                  },
+                  {
+                      "bytes":  13242,
+                      "name":  "1948.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1949.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1950.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1951.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1952.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1953.HTM"
+                  },
+                  {
+                      "bytes":  13242,
+                      "name":  "1954.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1955.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1956.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1957.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1958.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1959.HTM"
+                  },
+                  {
+                      "bytes":  13242,
+                      "name":  "1960.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1961.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1962.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1963.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1964.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1965.HTM"
+                  },
+                  {
+                      "bytes":  13242,
+                      "name":  "1966.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1967.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1968.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1969.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1970.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1971.HTM"
+                  },
+                  {
+                      "bytes":  13242,
+                      "name":  "1972.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1973.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1974.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1975.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1976.HTM"
+                  },
+                  {
+                      "bytes":  13242,
+                      "name":  "1977.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1978.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1979.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1980.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1981.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1982.HTM"
+                  },
+                  {
+                      "bytes":  13242,
+                      "name":  "1983.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1984.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1985.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1986.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1987.HTM"
+                  },
+                  {
+                      "bytes":  13242,
+                      "name":  "1988.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1989.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1990.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1991.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1992.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1993.HTM"
+                  },
+                  {
+                      "bytes":  13242,
+                      "name":  "1994.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1995.HTM"
+                  },
+                  {
+                      "bytes":  13070,
+                      "name":  "1996.HTM"
+                  },
+                  {
+                      "bytes":  20466,
+                      "name":  "1997.HTM"
+                  },
+                  {
+                      "bytes":  22014,
+                      "name":  "1998.HTM"
+                  },
+                  {
+                      "bytes":  22014,
+                      "name":  "1999.HTM"
+                  },
+                  {
+                      "bytes":  22129,
+                      "name":  "2000.HTM"
+                  },
+                  {
+                      "bytes":  22186,
+                      "name":  "2001.HTM"
+                  },
+                  {
+                      "bytes":  22874,
+                      "name":  "2002.HTM"
+                  },
+                  {
+                      "bytes":  22186,
+                      "name":  "2003.HTM"
+                  },
+                  {
+                      "bytes":  22014,
+                      "name":  "2004.HTM"
+                  },
+                  {
+                      "bytes":  29321,
+                      "name":  "2005.HTM"
+                  },
+                  {
+                      "bytes":  33645,
+                      "name":  "2006.HTM"
+                  },
+                  {
+                      "bytes":  33645,
+                      "name":  "2007.HTM"
+                  },
+                  {
+                      "bytes":  33833,
+                      "name":  "2008.HTM"
+                  },
+                  {
+                      "bytes":  33833,
+                      "name":  "2009.HTM"
+                  },
+                  {
+                      "bytes":  33645,
+                      "name":  "2010.HTM"
+                  },
+                  {
+                      "bytes":  33833,
+                      "name":  "2011.HTM"
+                  },
+                  {
+                      "bytes":  33645,
+                      "name":  "2012.HTM"
+                  },
+                  {
+                      "bytes":  33833,
+                      "name":  "2013.HTM"
+                  },
+                  {
+                      "bytes":  33645,
+                      "name":  "2014.HTM"
+                  },
+                  {
+                      "bytes":  33833,
+                      "name":  "2015.HTM"
+                  },
+                  {
+                      "bytes":  33833,
+                      "name":  "2016.HTM"
+                  },
+                  {
+                      "bytes":  33645,
+                      "name":  "2017.HTM"
+                  },
+                  {
+                      "bytes":  33645,
+                      "name":  "2018.HTM"
+                  },
+                  {
+                      "bytes":  33833,
+                      "name":  "2019.HTM"
+                  },
+                  {
+                      "bytes":  33833,
+                      "name":  "2020.HTM"
+                  },
+                  {
+                      "bytes":  33645,
+                      "name":  "2021.HTM"
+                  },
+                  {
+                      "bytes":  33833,
+                      "name":  "2022.HTM"
+                  },
+                  {
+                      "bytes":  38533,
+                      "name":  "2023.HTM"
+                  },
+                  {
+                      "bytes":  43608,
+                      "name":  "2024.HTM"
+                  },
+                  {
+                      "bytes":  43421,
+                      "name":  "2025.HTM"
+                  },
+                  {
+                      "bytes":  9673,
+                      "name":  "2026.HTM"
+                  }
+              ],
+    "assets":  [
+                   {
+                       "bytes":  5483,
+                       "file":  "assets/cielo-azzurro.jpg"
+                   }
+               ],
+    "mirrored":  "2026-03-20",
+    "index":  "page.php"
+}
