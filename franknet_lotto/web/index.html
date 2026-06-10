@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Super Motore Lotto — ambo, terno, quaterna</title>
+  <style>
+    :root {
+      --bg: #0f1419;
+      --card: #1a2332;
+      --accent: #3d9a6e;
+      --accent2: #5bb8e8;
+      --text: #e8edf4;
+      --muted: #8b9cb3;
+      --border: #2a3548;
+      --hit: #f0c040;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+      min-height: 100vh;
+    }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+    header { text-align: center; margin-bottom: 2rem; }
+    h1 { font-size: 1.75rem; font-weight: 700; letter-spacing: -0.02em; }
+    .sub { color: var(--muted); margin-top: 0.4rem; font-size: 0.95rem; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+    h2 { font-size: 1.1rem; margin-bottom: 0.75rem; color: var(--accent2); }
+    h3 { font-size: 0.95rem; margin: 1rem 0 0.5rem; color: var(--muted); }
+    label { display: block; font-size: 0.85rem; color: var(--muted); margin-bottom: 0.35rem; }
+    select, input {
+      width: 100%;
+      padding: 0.6rem 0.75rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--text);
+      font-size: 1rem;
+    }
+    .grid { display: grid; gap: 0.75rem; }
+    @media (min-width: 600px) {
+      .grid-2 { grid-template-columns: 1fr 1fr; }
+      .grid-5 { grid-template-columns: repeat(5, 1fr); }
+    }
+    .nums { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.5rem; }
+    .nums input { text-align: center; font-weight: 600; font-size: 1.1rem; }
+    button {
+      width: 100%;
+      margin-top: 1rem;
+      padding: 0.85rem;
+      border: none;
+      border-radius: 8px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    button:hover { filter: brightness(1.08); }
+    button:disabled { opacity: 0.5; cursor: wait; }
+    .flow {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      align-items: center;
+      font-size: 0.9rem;
+      margin: 0.75rem 0;
+    }
+    .flow span {
+      background: var(--bg);
+      padding: 0.35rem 0.65rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+    }
+    .arrow { color: var(--accent); font-weight: bold; }
+    .results { display: none; }
+    .results.show { display: block; }
+    .sorte-grid {
+      display: grid;
+      gap: 0.75rem;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .sorte-box {
+      background: var(--bg);
+      border-radius: 10px;
+      padding: 1rem;
+      border: 1px solid var(--border);
+    }
+    .sorte-box.winner { border-color: var(--accent); }
+    .sorte-name { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+    .picks {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 0.35rem 0;
+      color: var(--hit);
+      font-variant-numeric: tabular-nums;
+    }
+    .payout { font-size: 0.8rem; color: var(--muted); }
+    .mode-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      padding: 0.15rem 0.45rem;
+      border-radius: 4px;
+      background: #2a4035;
+      color: var(--accent);
+      margin-top: 0.35rem;
+    }
+    .pool {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-top: 0.5rem;
+    }
+    .pool b {
+      font-weight: 600;
+      padding: 0.2rem 0.45rem;
+      background: var(--bg);
+      border-radius: 4px;
+      font-size: 0.85rem;
+    }
+    .explain { font-size: 0.9rem; color: var(--muted); }
+    .explain li { margin: 0.35rem 0 0.35rem 1.2rem; }
+    .warn {
+      background: #2a2418;
+      border: 1px solid #5a4a20;
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      font-size: 0.85rem;
+      color: #d4b860;
+      margin-top: 1rem;
+    }
+    .status { font-size: 0.8rem; color: var(--muted); text-align: center; margin-top: 1rem; }
+    .err { color: #e07070; margin-top: 0.5rem; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Super Motore Lotto</h1>
+      <p class="sub">Inserisci l'ultima cinquina (ordine estrazione) → suggerimenti ambo, terno, quaterna</p>
+    </header>
+
+    <section class="card">
+      <h2>Come funziona</h2>
+      <div class="flow">
+        <span>Ultima cinquina</span>
+        <span class="arrow">→</span>
+        <span>Pool cross (comp 90-n, vertibili, diff)</span>
+        <span class="arrow">→</span>
+        <span>Score + science</span>
+        <span class="arrow">→</span>
+        <span>Ambo / Terno / Quaterna</span>
+      </div>
+      <ul class="explain">
+        <li><strong>Sì, funziona così:</strong> inserisci i 5 numeri dell'estrazione precedente <em>nell'ordine in cui sono usciti</em> (pos1 → pos5).</li>
+        <li><strong>Cross (base):</strong> da sola la quintina basta. Complementi, vertibili (es. 37↔73), differenze tra posizioni, incroci.</li>
+        <li><strong>Science (+):</strong> aggiunge calendario, armoniche su 156 anni, k-NN di fase. Richiede il server Python con storico.</li>
+        <li><strong>NAZIONALE ambo</strong> usa sempre cross (unica combo profittevole su test 2015–26).</li>
+        <li>Puntata: <strong>1€ intero</strong> sulla combinazione secca (non splittare su più coppie).</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Calcola suggerimenti</h2>
+      <div class="grid grid-2" style="margin-bottom:1rem">
+        <div>
+          <label for="wheel">Ruota</label>
+          <select id="wheel">
+            <option value="NAZIONALE">NAZIONALE</option>
+            <option value="BARI">BARI</option>
+            <option value="CAGLIARI">CAGLIARI</option>
+            <option value="FIRENZE">FIRENZE</option>
+            <option value="GENOVA">GENOVA</option>
+            <option value="MILANO">MILANO</option>
+            <option value="NAPOLI">NAPOLI</option>
+            <option value="PALERMO">PALERMO</option>
+            <option value="ROMA">ROMA</option>
+            <option value="TORINO">TORINO</option>
+            <option value="VENEZIA">VENEZIA</option>
+          </select>
+        </div>
+        <div>
+          <label for="prev_date">Data estrazione cinquina (opzionale)</label>
+          <input type="date" id="prev_date" />
+        </div>
+        <div>
+          <label for="draw_index">N° concorso prossima estrazione (opzionale)</label>
+          <input type="number" id="draw_index" min="1" max="200" placeholder="es. 93" />
+        </div>
+      </div>
+      <label>Ultima cinquina — ordine estrazione (1° … 5°)</label>
+      <div class="nums" style="margin-top:0.5rem">
+        <input type="number" id="n1" min="1" max="90" placeholder="1°" />
+        <input type="number" id="n2" min="1" max="90" placeholder="2°" />
+        <input type="number" id="n3" min="1" max="90" placeholder="3°" />
+        <input type="number" id="n4" min="1" max="90" placeholder="4°" />
+        <input type="number" id="n5" min="1" max="90" placeholder="5°" />
+      </div>
+      <p class="err" id="err" hidden></p>
+      <button type="button" id="go">Calcola ambo, terno, quaterna</button>
+    </section>
+
+    <section class="card results" id="results">
+      <h2>Suggerimenti <span id="res-wheel"></span></h2>
+      <p class="sub" id="res-meta"></p>
+      <div class="sorte-grid" id="sorte-grid"></div>
+      <h3>Pool cross — top 12</h3>
+      <div class="pool" id="pool"></div>
+      <div class="warn">
+        Il motore migliora leggermente la baseline casuale su periodi lunghi, ma <strong>non garantisce vincite</strong>.
+        Verifica live giu 2026: 0 ambo su 5 estrazioni. Gioca responsabilmente.
+      </div>
+    </section>
+
+    <p class="status" id="status">Server science: verifica connessione…</p>
+  </div>
+
+  <script type="module">
+    import { predictCrossOnly } from "./cross-engine.js";
+
+    const PAYOUT = { ambo: 250, terno: 4500, quaterna: 120000, cinquina: 6000000 };
+    const SORTE = ["ambo", "terno", "quaterna", "cinquina"];
+
+    const $ = (id) => document.getElementById(id);
+    let serverOk = false;
+
+    async function checkServer() {
+      try {
+        const r = await fetch("/health", { signal: AbortSignal.timeout(2000) });
+        serverOk = r.ok;
+        $("status").textContent = serverOk
+          ? "Motore science attivo (storico 156 anni)"
+          : "Solo cross client-side (avvia: python3 scripts/super_engine_server.py)";
+      } catch {
+        $("status").textContent = "Solo cross client-side — per science: python3 scripts/super_engine_server.py";
+      }
+    }
+
+    function readQuintina() {
+      const q = [1, 2, 3, 4, 5].map((i) => parseInt($( `n${i}`).value, 10));
+      if (q.some((n) => isNaN(n) || n < 1 || n > 90)) throw new Error("Inserisci 5 numeri tra 1 e 90");
+      if (new Set(q).size !== 5) throw new Error("I 5 numeri devono essere tutti diversi");
+      return q;
+    }
+
+    function renderResults(data, wheel) {
+      $("res-wheel").textContent = wheel;
+      $("res-meta").textContent = data.next_draw_date
+        ? `Seme pos1: ${data.anchor_pos1} · Prossima estrazione stimata: ${data.next_draw_date}`
+        : `Seme pos1: ${data.input_quintina?.[0] ?? data.anchor_pos1 ?? "—"}`;
+
+      const grid = $("sorte-grid");
+      grid.innerHTML = "";
+      const sorteData = data.sorte || {
+        ambo: { picks: data.ambo, mode: data.mode || "cross", payout_eur: PAYOUT.ambo },
+        terno: { picks: data.terno, mode: data.mode || "cross", payout_eur: PAYOUT.terno },
+        quaterna: { picks: data.quaterna, mode: data.mode || "cross", payout_eur: PAYOUT.quaterna },
+        cinquina: { picks: data.cinquina, mode: data.mode || "cross", payout_eur: PAYOUT.cinquina },
+      };
+
+      for (const name of SORTE) {
+        const s = sorteData[name];
+        if (!s) continue;
+        const box = document.createElement("div");
+        box.className = "sorte-box";
+        box.innerHTML = `
+          <div class="sorte-name">${name}</div>
+          <div class="picks">${s.picks.join(" – ")}</div>
+          <div class="payout">1€ intero → ${s.payout_eur?.toLocaleString("it") ?? PAYOUT[name].toLocaleString("it")}€</div>
+          <span class="mode-tag">${s.mode || "cross"}</span>
+        `;
+        grid.appendChild(box);
+      }
+
+      const poolNums = data.pool_top12 || data.pool_top12;
+      const pool = $("pool");
+      pool.innerHTML = "";
+      (data.pool_top12 || []).forEach((n) => {
+        const b = document.createElement("b");
+        b.textContent = n;
+        pool.appendChild(b);
+      });
+
+      $("results").classList.add("show");
+    }
+
+    $("go").addEventListener("click", async () => {
+      $("err").hidden = true;
+      $("go").disabled = true;
+      try {
+        const quintina = readQuintina();
+        const wheel = $("wheel").value;
+        const prev_date = $("prev_date").value || null;
+        const draw_index = $("draw_index").value ? parseInt($("draw_index").value, 10) : null;
+        const body = { wheel, quintina, prev_date };
+        if (draw_index) body.draw_index = draw_index;
+
+        if (serverOk) {
+          const res = await fetch("/api/predict", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(body),
+          });
+          const data = await res.json();
+          if (!res.ok) throw new Error(data.error || "Errore server");
+          renderResults(data, wheel);
+        } else {
+          const cross = predictCrossOnly(quintina);
+          renderResults({
+            input_quintina: quintina,
+            anchor_pos1: quintina[0],
+            pool_top12: cross.pool_top12,
+            sorte: {
+              ambo: { picks: cross.ambo, mode: "cross", payout_eur: 250 },
+              terno: { picks: cross.terno, mode: "cross", payout_eur: 4500 },
+              quaterna: { picks: cross.quaterna, mode: "cross", payout_eur: 120000 },
+              cinquina: { picks: cross.cinquina, mode: "cross", payout_eur: 6000000 },
+            },
+          }, wheel);
+        }
+      } catch (e) {
+        $("err").textContent = e.message;
+        $("err").hidden = false;
+      } finally {
+        $("go").disabled = false;
+      }
+    });
+
+    // Esempio: Nazionale 6 giu 2026
+    [7, 25, 36, 38, 8].forEach((n, i) => { $(`n${i + 1}`).value = n; });
+    $("prev_date").value = "2026-06-06";
+
+    checkServer();
+  </script>
+</body>
+</html>
