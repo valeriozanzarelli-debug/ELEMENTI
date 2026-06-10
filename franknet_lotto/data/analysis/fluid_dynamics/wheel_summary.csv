@@ -1,0 +1,12 @@
+wheel,best_weights_cross,test_hits_cross_v1,test_hits_cross_weighted,test_hits_fluid_augmented,fluid_minus_cross,cross_weighted_minus_cross,test_top8_cross,test_top8_cross_weighted,test_top8_fluid_weighted,top8_fluid_minus_cross,test_mc_p95_cross,cross_beats_mc_p95,fluid_beats_mc_p95,strongest_solo_pos
+BARI,"(1, 1, 1, 1, 1)",1633,1633,2056,423,0,212,212,217,5,1661,False,False,4
+CAGLIARI,"(1, 1, 1, 1, 1)",1632,1632,2088,456,0,226,226,227,1,1665,False,False,5
+FIRENZE,"(1, 1, 1, 1, 1)",1631,1631,2080,449,0,199,199,203,4,1650,False,False,4
+GENOVA,"(1, 1, 1, 1, 1)",1631,1631,2091,460,0,215,215,213,-2,1669,False,False,2
+MILANO,"(1, 1, 1, 1, 1)",1607,1607,2100,493,0,211,211,219,8,1675,False,False,3
+NAPOLI,"(1, 1, 1, 1, 1)",1614,1614,2100,486,0,221,221,219,-2,1673,False,False,3
+PALERMO,"(1, 1, 1, 1, 1)",1644,1644,2092,448,0,208,208,210,2,1674,False,False,4
+ROMA,"(1, 1, 1, 1, 1)",1697,1697,2141,444,0,250,250,237,-13,1677,True,True,4
+TORINO,"(1, 1, 1, 1, 1)",1619,1619,2085,466,0,215,215,216,1,1677,False,False,1
+VENEZIA,"(1, 1, 1, 1, 1)",1616,1616,2063,447,0,226,226,225,-1,1667,False,False,5
+NAZIONALE,"(1, 1, 1, 1, 1)",1673,1673,2104,431,0,234,234,228,-6,1667,True,False,3
