@@ -1,0 +1,178 @@
+{
+  "BARI": {
+    "ambo": {
+      "weights": {
+        "w_cross": 2.0,
+        "w_harmonic": 0,
+        "w_lattice": 18,
+        "w_knn": 35,
+        "w_anchor_echo": 8,
+        "w_cooc": 15,
+        "score_all_90": true,
+        "pick_pool_size": 10,
+        "confidence_min_margin": 0.0
+      },
+      "mode": "science"
+    }
+  },
+  "CAGLIARI": {
+    "ambo": {
+      "weights": {
+        "w_cross": 1.0,
+        "w_harmonic": 80,
+        "w_lattice": 18,
+        "w_knn": 15,
+        "w_anchor_echo": 8,
+        "w_cooc": 15,
+        "score_all_90": true,
+        "pick_pool_size": 10,
+        "confidence_min_margin": 0.0
+      },
+      "mode": "science"
+    }
+  },
+  "FIRENZE": {
+    "ambo": {
+      "weights": {
+        "w_cross": 2.0,
+        "w_harmonic": 0,
+        "w_lattice": 18,
+        "w_knn": 35,
+        "w_anchor_echo": 8,
+        "w_cooc": 15,
+        "score_all_90": true,
+        "pick_pool_size": 10,
+        "confidence_min_margin": 0.0
+      },
+      "mode": "science"
+    }
+  },
+  "GENOVA": {
+    "ambo": {
+      "weights": {
+        "w_cross": 1.0,
+        "w_harmonic": 0,
+        "w_lattice": 18,
+        "w_knn": 35,
+        "w_anchor_echo": 8,
+        "w_cooc": 15,
+        "score_all_90": true,
+        "pick_pool_size": 10,
+        "confidence_min_margin": 0.0
+      },
+      "mode": "science"
+    }
+  },
+  "MILANO": {
+    "ambo": {
+      "weights": {
+        "w_cross": 1.0,
+        "w_harmonic": 80,
+        "w_lattice": 18,
+        "w_knn": 15,
+        "w_anchor_echo": 8,
+        "w_cooc": 15,
+        "score_all_90": true,
+        "pick_pool_size": 10,
+        "confidence_min_margin": 0.0
+      },
+      "mode": "science"
+    }
+  },
+  "NAPOLI": {
+    "ambo": {
+      "weights": {
+        "w_cross": 1.0,
+        "w_harmonic": 120,
+        "w_lattice": 18,
+        "w_knn": 15,
+        "w_anchor_echo": 8,
+        "w_cooc": 15,
+        "score_all_90": true,
+        "pick_pool_size": 10,
+        "confidence_min_margin": 0.0
+      },
+      "mode": "science"
+    }
+  },
+  "PALERMO": {
+    "ambo": {
+      "weights": {
+        "w_cross": 1.0,
+        "w_harmonic": 0,
+        "w_lattice": 18,
+        "w_knn": 15,
+        "w_anchor_echo": 8,
+        "w_cooc": 15,
+        "score_all_90": true,
+        "pick_pool_size": 10,
+        "confidence_min_margin": 0.0
+      },
+      "mode": "science"
+    }
+  },
+  "ROMA": {
+    "ambo": {
+      "weights": {
+        "w_cross": 1.0,
+        "w_harmonic": 80,
+        "w_lattice": 18,
+        "w_knn": 15,
+        "w_anchor_echo": 8,
+        "w_cooc": 15,
+        "score_all_90": true,
+        "pick_pool_size": 10,
+        "confidence_min_margin": 0.0
+      },
+      "mode": "science"
+    }
+  },
+  "TORINO": {
+    "ambo": {
+      "weights": {
+        "w_cross": 2.0,
+        "w_harmonic": 0,
+        "w_lattice": 18,
+        "w_knn": 15,
+        "w_anchor_echo": 8,
+        "w_cooc": 15,
+        "score_all_90": false,
+        "pick_pool_size": 10,
+        "confidence_min_margin": 0.0
+      },
+      "mode": "science"
+    }
+  },
+  "VENEZIA": {
+    "ambo": {
+      "weights": {
+        "w_cross": 2.0,
+        "w_harmonic": 80,
+        "w_lattice": 18,
+        "w_knn": 15,
+        "w_anchor_echo": 8,
+        "w_cooc": 15,
+        "score_all_90": true,
+        "pick_pool_size": 10,
+        "confidence_min_margin": 0.0
+      },
+      "mode": "science"
+    }
+  },
+  "NAZIONALE": {
+    "ambo": {
+      "weights": {
+        "w_cross": 1.0,
+        "w_harmonic": 0,
+        "w_lattice": 18,
+        "w_knn": 35,
+        "w_anchor_echo": 8,
+        "w_cooc": 15,
+        "score_all_90": true,
+        "pick_pool_size": 10,
+        "confidence_min_margin": 0.0
+      },
+      "mode": "cross"
+    }
+  }
+}
