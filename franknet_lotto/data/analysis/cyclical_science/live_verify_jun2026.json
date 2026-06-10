@@ -1,0 +1,1718 @@
+{
+  "verified_at": "2026-06-09",
+  "italy_lotto": {
+    "sorte": "ambo",
+    "n_draws": 5,
+    "period": "2026-06-03 .. 2026-06-09 (ultime 5 estrazioni al 9 giu 2026)",
+    "bridge_note": "Prev chain: May29→May30→Jun3…→Jun9; gap Mar17-May27 non in CSV",
+    "sources": [
+      "Ilprincipa.it",
+      "Ilprincipa.it",
+      "Ilprincipa.it",
+      "Ilprincipa.it / TPI / Today.it",
+      "Ilprincipa.it"
+    ],
+    "wheels": {
+      "BARI": {
+        "mode": "science",
+        "transitions": [
+          {
+            "from_date": "2026-05-30",
+            "to_date": "2026-06-03",
+            "draw_index": 88,
+            "mode": "science",
+            "prev_quintina": [
+              87,
+              61,
+              14,
+              25,
+              38
+            ],
+            "picks": [
+              78,
+              40
+            ],
+            "drawn": [
+              6,
+              49,
+              53,
+              65,
+              25
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-03",
+            "to_date": "2026-06-04",
+            "draw_index": 89,
+            "mode": "science",
+            "prev_quintina": [
+              6,
+              49,
+              53,
+              65,
+              25
+            ],
+            "picks": [
+              4,
+              9
+            ],
+            "drawn": [
+              78,
+              89,
+              73,
+              50,
+              28
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-04",
+            "to_date": "2026-06-05",
+            "draw_index": 90,
+            "mode": "science",
+            "prev_quintina": [
+              78,
+              89,
+              73,
+              50,
+              28
+            ],
+            "picks": [
+              40,
+              27
+            ],
+            "drawn": [
+              11,
+              36,
+              33,
+              25,
+              57
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-05",
+            "to_date": "2026-06-06",
+            "draw_index": 91,
+            "mode": "science",
+            "prev_quintina": [
+              11,
+              36,
+              33,
+              25,
+              57
+            ],
+            "picks": [
+              11,
+              37
+            ],
+            "drawn": [
+              79,
+              44,
+              34,
+              76,
+              86
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-06",
+            "to_date": "2026-06-09",
+            "draw_index": 92,
+            "mode": "science",
+            "prev_quintina": [
+              79,
+              44,
+              34,
+              76,
+              86
+            ],
+            "picks": [
+              11,
+              86
+            ],
+            "drawn": [
+              31,
+              81,
+              28,
+              45,
+              85
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          }
+        ],
+        "spent": 5,
+        "hits": 0,
+        "won_gross": 0.0
+      },
+      "CAGLIARI": {
+        "mode": "science",
+        "transitions": [
+          {
+            "from_date": "2026-05-30",
+            "to_date": "2026-06-03",
+            "draw_index": 88,
+            "mode": "science",
+            "prev_quintina": [
+              72,
+              1,
+              87,
+              13,
+              26
+            ],
+            "picks": [
+              26,
+              27
+            ],
+            "drawn": [
+              23,
+              71,
+              63,
+              50,
+              27
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-03",
+            "to_date": "2026-06-04",
+            "draw_index": 89,
+            "mode": "science",
+            "prev_quintina": [
+              23,
+              71,
+              63,
+              50,
+              27
+            ],
+            "picks": [
+              4,
+              79
+            ],
+            "drawn": [
+              2,
+              59,
+              30,
+              60,
+              9
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-04",
+            "to_date": "2026-06-05",
+            "draw_index": 90,
+            "mode": "science",
+            "prev_quintina": [
+              2,
+              59,
+              30,
+              60,
+              9
+            ],
+            "picks": [
+              13,
+              8
+            ],
+            "drawn": [
+              57,
+              4,
+              70,
+              22,
+              73
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-05",
+            "to_date": "2026-06-06",
+            "draw_index": 91,
+            "mode": "science",
+            "prev_quintina": [
+              57,
+              4,
+              70,
+              22,
+              73
+            ],
+            "picks": [
+              11,
+              1
+            ],
+            "drawn": [
+              16,
+              76,
+              87,
+              84,
+              37
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-06",
+            "to_date": "2026-06-09",
+            "draw_index": 92,
+            "mode": "science",
+            "prev_quintina": [
+              16,
+              76,
+              87,
+              84,
+              37
+            ],
+            "picks": [
+              37,
+              66
+            ],
+            "drawn": [
+              35,
+              85,
+              70,
+              25,
+              88
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          }
+        ],
+        "spent": 5,
+        "hits": 0,
+        "won_gross": 0.0
+      },
+      "FIRENZE": {
+        "mode": "science",
+        "transitions": [
+          {
+            "from_date": "2026-05-30",
+            "to_date": "2026-06-03",
+            "draw_index": 88,
+            "mode": "science",
+            "prev_quintina": [
+              34,
+              60,
+              5,
+              42,
+              54
+            ],
+            "picks": [
+              61,
+              56
+            ],
+            "drawn": [
+              79,
+              7,
+              61,
+              8,
+              65
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-03",
+            "to_date": "2026-06-04",
+            "draw_index": 89,
+            "mode": "science",
+            "prev_quintina": [
+              79,
+              7,
+              61,
+              8,
+              65
+            ],
+            "picks": [
+              32,
+              44
+            ],
+            "drawn": [
+              62,
+              56,
+              28,
+              72,
+              23
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-04",
+            "to_date": "2026-06-05",
+            "draw_index": 90,
+            "mode": "science",
+            "prev_quintina": [
+              62,
+              56,
+              28,
+              72,
+              23
+            ],
+            "picks": [
+              26,
+              75
+            ],
+            "drawn": [
+              39,
+              71,
+              83,
+              31,
+              72
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-05",
+            "to_date": "2026-06-06",
+            "draw_index": 91,
+            "mode": "science",
+            "prev_quintina": [
+              39,
+              71,
+              83,
+              31,
+              72
+            ],
+            "picks": [
+              21,
+              71
+            ],
+            "drawn": [
+              70,
+              35,
+              43,
+              72,
+              4
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-06",
+            "to_date": "2026-06-09",
+            "draw_index": 92,
+            "mode": "science",
+            "prev_quintina": [
+              70,
+              35,
+              43,
+              72,
+              4
+            ],
+            "picks": [
+              44,
+              71
+            ],
+            "drawn": [
+              27,
+              68,
+              41,
+              35,
+              69
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          }
+        ],
+        "spent": 5,
+        "hits": 0,
+        "won_gross": 0.0
+      },
+      "GENOVA": {
+        "mode": "science",
+        "transitions": [
+          {
+            "from_date": "2026-05-30",
+            "to_date": "2026-06-03",
+            "draw_index": 88,
+            "mode": "science",
+            "prev_quintina": [
+              62,
+              5,
+              18,
+              69,
+              73
+            ],
+            "picks": [
+              62,
+              72
+            ],
+            "drawn": [
+              5,
+              48,
+              79,
+              23,
+              16
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-03",
+            "to_date": "2026-06-04",
+            "draw_index": 89,
+            "mode": "science",
+            "prev_quintina": [
+              5,
+              48,
+              79,
+              23,
+              16
+            ],
+            "picks": [
+              34,
+              11
+            ],
+            "drawn": [
+              20,
+              14,
+              19,
+              32,
+              24
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-04",
+            "to_date": "2026-06-05",
+            "draw_index": 90,
+            "mode": "science",
+            "prev_quintina": [
+              20,
+              14,
+              19,
+              32,
+              24
+            ],
+            "picks": [
+              29,
+              89
+            ],
+            "drawn": [
+              79,
+              89,
+              18,
+              80,
+              5
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-05",
+            "to_date": "2026-06-06",
+            "draw_index": 91,
+            "mode": "science",
+            "prev_quintina": [
+              79,
+              89,
+              18,
+              80,
+              5
+            ],
+            "picks": [
+              62,
+              11
+            ],
+            "drawn": [
+              38,
+              59,
+              6,
+              79,
+              55
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-06",
+            "to_date": "2026-06-09",
+            "draw_index": 92,
+            "mode": "science",
+            "prev_quintina": [
+              38,
+              59,
+              6,
+              79,
+              55
+            ],
+            "picks": [
+              42,
+              28
+            ],
+            "drawn": [
+              52,
+              71,
+              88,
+              38,
+              27
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          }
+        ],
+        "spent": 5,
+        "hits": 0,
+        "won_gross": 0.0
+      },
+      "MILANO": {
+        "mode": "science",
+        "transitions": [
+          {
+            "from_date": "2026-05-30",
+            "to_date": "2026-06-03",
+            "draw_index": 88,
+            "mode": "science",
+            "prev_quintina": [
+              14,
+              54,
+              29,
+              81,
+              83
+            ],
+            "picks": [
+              66,
+              69
+            ],
+            "drawn": [
+              15,
+              40,
+              78,
+              47,
+              58
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-03",
+            "to_date": "2026-06-04",
+            "draw_index": 89,
+            "mode": "science",
+            "prev_quintina": [
+              15,
+              40,
+              78,
+              47,
+              58
+            ],
+            "picks": [
+              15,
+              43
+            ],
+            "drawn": [
+              25,
+              30,
+              78,
+              72,
+              40
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-04",
+            "to_date": "2026-06-05",
+            "draw_index": 90,
+            "mode": "science",
+            "prev_quintina": [
+              25,
+              30,
+              78,
+              72,
+              40
+            ],
+            "picks": [
+              25,
+              18
+            ],
+            "drawn": [
+              15,
+              68,
+              19,
+              49,
+              87
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-05",
+            "to_date": "2026-06-06",
+            "draw_index": 91,
+            "mode": "science",
+            "prev_quintina": [
+              15,
+              68,
+              19,
+              49,
+              87
+            ],
+            "picks": [
+              87,
+              9
+            ],
+            "drawn": [
+              40,
+              68,
+              61,
+              88,
+              83
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-06",
+            "to_date": "2026-06-09",
+            "draw_index": 92,
+            "mode": "science",
+            "prev_quintina": [
+              40,
+              68,
+              61,
+              88,
+              83
+            ],
+            "picks": [
+              40,
+              66
+            ],
+            "drawn": [
+              12,
+              82,
+              83,
+              25,
+              80
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          }
+        ],
+        "spent": 5,
+        "hits": 0,
+        "won_gross": 0.0
+      },
+      "NAPOLI": {
+        "mode": "science",
+        "transitions": [
+          {
+            "from_date": "2026-05-30",
+            "to_date": "2026-06-03",
+            "draw_index": 88,
+            "mode": "science",
+            "prev_quintina": [
+              71,
+              76,
+              89,
+              19,
+              25
+            ],
+            "picks": [
+              6,
+              71
+            ],
+            "drawn": [
+              37,
+              81,
+              7,
+              34,
+              78
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-03",
+            "to_date": "2026-06-04",
+            "draw_index": 89,
+            "mode": "science",
+            "prev_quintina": [
+              37,
+              81,
+              7,
+              34,
+              78
+            ],
+            "picks": [
+              78,
+              30
+            ],
+            "drawn": [
+              33,
+              69,
+              25,
+              17,
+              26
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-04",
+            "to_date": "2026-06-05",
+            "draw_index": 90,
+            "mode": "science",
+            "prev_quintina": [
+              33,
+              69,
+              25,
+              17,
+              26
+            ],
+            "picks": [
+              33,
+              26
+            ],
+            "drawn": [
+              10,
+              56,
+              66,
+              58,
+              7
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-05",
+            "to_date": "2026-06-06",
+            "draw_index": 91,
+            "mode": "science",
+            "prev_quintina": [
+              10,
+              56,
+              66,
+              58,
+              7
+            ],
+            "picks": [
+              36,
+              10
+            ],
+            "drawn": [
+              37,
+              61,
+              90,
+              22,
+              14
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-06",
+            "to_date": "2026-06-09",
+            "draw_index": 92,
+            "mode": "science",
+            "prev_quintina": [
+              37,
+              61,
+              90,
+              22,
+              14
+            ],
+            "picks": [
+              47,
+              80
+            ],
+            "drawn": [
+              37,
+              10,
+              17,
+              48,
+              59
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          }
+        ],
+        "spent": 5,
+        "hits": 0,
+        "won_gross": 0.0
+      },
+      "PALERMO": {
+        "mode": "science",
+        "transitions": [
+          {
+            "from_date": "2026-05-30",
+            "to_date": "2026-06-03",
+            "draw_index": 88,
+            "mode": "science",
+            "prev_quintina": [
+              33,
+              15,
+              48,
+              26,
+              65
+            ],
+            "picks": [
+              33,
+              11
+            ],
+            "drawn": [
+              36,
+              65,
+              39,
+              69,
+              5
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-03",
+            "to_date": "2026-06-04",
+            "draw_index": 89,
+            "mode": "science",
+            "prev_quintina": [
+              36,
+              65,
+              39,
+              69,
+              5
+            ],
+            "picks": [
+              36,
+              59
+            ],
+            "drawn": [
+              63,
+              24,
+              82,
+              1,
+              8
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-04",
+            "to_date": "2026-06-05",
+            "draw_index": 90,
+            "mode": "science",
+            "prev_quintina": [
+              63,
+              24,
+              82,
+              1,
+              8
+            ],
+            "picks": [
+              63,
+              76
+            ],
+            "drawn": [
+              50,
+              27,
+              19,
+              6,
+              75
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-05",
+            "to_date": "2026-06-06",
+            "draw_index": 91,
+            "mode": "science",
+            "prev_quintina": [
+              50,
+              27,
+              19,
+              6,
+              75
+            ],
+            "picks": [
+              25,
+              50
+            ],
+            "drawn": [
+              31,
+              45,
+              90,
+              44,
+              26
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-06",
+            "to_date": "2026-06-09",
+            "draw_index": 92,
+            "mode": "science",
+            "prev_quintina": [
+              31,
+              45,
+              90,
+              44,
+              26
+            ],
+            "picks": [
+              6,
+              44
+            ],
+            "drawn": [
+              74,
+              55,
+              30,
+              16,
+              29
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          }
+        ],
+        "spent": 5,
+        "hits": 0,
+        "won_gross": 0.0
+      },
+      "ROMA": {
+        "mode": "science",
+        "transitions": [
+          {
+            "from_date": "2026-05-30",
+            "to_date": "2026-06-03",
+            "draw_index": 88,
+            "mode": "science",
+            "prev_quintina": [
+              67,
+              47,
+              2,
+              86,
+              42
+            ],
+            "picks": [
+              3,
+              2
+            ],
+            "drawn": [
+              4,
+              23,
+              53,
+              82,
+              5
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-03",
+            "to_date": "2026-06-04",
+            "draw_index": 89,
+            "mode": "science",
+            "prev_quintina": [
+              4,
+              23,
+              53,
+              82,
+              5
+            ],
+            "picks": [
+              23,
+              51
+            ],
+            "drawn": [
+              21,
+              17,
+              23,
+              71,
+              31
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-04",
+            "to_date": "2026-06-05",
+            "draw_index": 90,
+            "mode": "science",
+            "prev_quintina": [
+              21,
+              17,
+              23,
+              71,
+              31
+            ],
+            "picks": [
+              62,
+              61
+            ],
+            "drawn": [
+              60,
+              24,
+              39,
+              79,
+              62
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-05",
+            "to_date": "2026-06-06",
+            "draw_index": 91,
+            "mode": "science",
+            "prev_quintina": [
+              60,
+              24,
+              39,
+              79,
+              62
+            ],
+            "picks": [
+              2,
+              30
+            ],
+            "drawn": [
+              72,
+              4,
+              6,
+              41,
+              23
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-06",
+            "to_date": "2026-06-09",
+            "draw_index": 92,
+            "mode": "science",
+            "prev_quintina": [
+              72,
+              4,
+              6,
+              41,
+              23
+            ],
+            "picks": [
+              4,
+              20
+            ],
+            "drawn": [
+              3,
+              90,
+              32,
+              37,
+              43
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          }
+        ],
+        "spent": 5,
+        "hits": 0,
+        "won_gross": 0.0
+      },
+      "TORINO": {
+        "mode": "science",
+        "transitions": [
+          {
+            "from_date": "2026-05-30",
+            "to_date": "2026-06-03",
+            "draw_index": 88,
+            "mode": "science",
+            "prev_quintina": [
+              78,
+              87,
+              66,
+              10,
+              52
+            ],
+            "picks": [
+              78,
+              80
+            ],
+            "drawn": [
+              24,
+              40,
+              52,
+              35,
+              81
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-03",
+            "to_date": "2026-06-04",
+            "draw_index": 89,
+            "mode": "science",
+            "prev_quintina": [
+              24,
+              40,
+              52,
+              35,
+              81
+            ],
+            "picks": [
+              68,
+              57
+            ],
+            "drawn": [
+              2,
+              76,
+              71,
+              58,
+              72
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-04",
+            "to_date": "2026-06-05",
+            "draw_index": 90,
+            "mode": "science",
+            "prev_quintina": [
+              2,
+              76,
+              71,
+              58,
+              72
+            ],
+            "picks": [
+              19,
+              88
+            ],
+            "drawn": [
+              75,
+              47,
+              41,
+              84,
+              45
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-05",
+            "to_date": "2026-06-06",
+            "draw_index": 91,
+            "mode": "science",
+            "prev_quintina": [
+              75,
+              47,
+              41,
+              84,
+              45
+            ],
+            "picks": [
+              88,
+              15
+            ],
+            "drawn": [
+              65,
+              62,
+              34,
+              6,
+              86
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-06",
+            "to_date": "2026-06-09",
+            "draw_index": 92,
+            "mode": "science",
+            "prev_quintina": [
+              65,
+              62,
+              34,
+              6,
+              86
+            ],
+            "picks": [
+              56,
+              65
+            ],
+            "drawn": [
+              35,
+              43,
+              64,
+              8,
+              67
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          }
+        ],
+        "spent": 5,
+        "hits": 0,
+        "won_gross": 0.0
+      },
+      "VENEZIA": {
+        "mode": "science",
+        "transitions": [
+          {
+            "from_date": "2026-05-30",
+            "to_date": "2026-06-03",
+            "draw_index": 88,
+            "mode": "science",
+            "prev_quintina": [
+              84,
+              23,
+              40,
+              15,
+              24
+            ],
+            "picks": [
+              84,
+              33
+            ],
+            "drawn": [
+              53,
+              85,
+              38,
+              74,
+              67
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-03",
+            "to_date": "2026-06-04",
+            "draw_index": 89,
+            "mode": "science",
+            "prev_quintina": [
+              53,
+              85,
+              38,
+              74,
+              67
+            ],
+            "picks": [
+              86,
+              53
+            ],
+            "drawn": [
+              58,
+              48,
+              51,
+              78,
+              67
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-04",
+            "to_date": "2026-06-05",
+            "draw_index": 90,
+            "mode": "science",
+            "prev_quintina": [
+              58,
+              48,
+              51,
+              78,
+              67
+            ],
+            "picks": [
+              22,
+              32
+            ],
+            "drawn": [
+              56,
+              8,
+              84,
+              38,
+              9
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-05",
+            "to_date": "2026-06-06",
+            "draw_index": 91,
+            "mode": "science",
+            "prev_quintina": [
+              56,
+              8,
+              84,
+              38,
+              9
+            ],
+            "picks": [
+              56,
+              82
+            ],
+            "drawn": [
+              34,
+              64,
+              59,
+              49,
+              71
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-06",
+            "to_date": "2026-06-09",
+            "draw_index": 92,
+            "mode": "science",
+            "prev_quintina": [
+              34,
+              64,
+              59,
+              49,
+              71
+            ],
+            "picks": [
+              45,
+              37
+            ],
+            "drawn": [
+              33,
+              66,
+              43,
+              85,
+              44
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          }
+        ],
+        "spent": 5,
+        "hits": 0,
+        "won_gross": 0.0
+      },
+      "NAZIONALE": {
+        "mode": "cross",
+        "transitions": [
+          {
+            "from_date": "2026-05-30",
+            "to_date": "2026-06-03",
+            "draw_index": 88,
+            "mode": "cross",
+            "prev_quintina": [
+              77,
+              72,
+              73,
+              56,
+              83
+            ],
+            "picks": [
+              12,
+              18
+            ],
+            "drawn": [
+              57,
+              31,
+              74,
+              75,
+              30
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-03",
+            "to_date": "2026-06-04",
+            "draw_index": 89,
+            "mode": "cross",
+            "prev_quintina": [
+              57,
+              31,
+              74,
+              75,
+              30
+            ],
+            "picks": [
+              58,
+              59
+            ],
+            "drawn": [
+              89,
+              53,
+              61,
+              62,
+              15
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-04",
+            "to_date": "2026-06-05",
+            "draw_index": 90,
+            "mode": "cross",
+            "prev_quintina": [
+              89,
+              53,
+              61,
+              62,
+              15
+            ],
+            "picks": [
+              76,
+              36
+            ],
+            "drawn": [
+              61,
+              62,
+              68,
+              30,
+              75
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-05",
+            "to_date": "2026-06-06",
+            "draw_index": 91,
+            "mode": "cross",
+            "prev_quintina": [
+              61,
+              62,
+              68,
+              30,
+              75
+            ],
+            "picks": [
+              16,
+              23
+            ],
+            "drawn": [
+              7,
+              25,
+              36,
+              38,
+              8
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          },
+          {
+            "from_date": "2026-06-06",
+            "to_date": "2026-06-09",
+            "draw_index": 92,
+            "mode": "cross",
+            "prev_quintina": [
+              7,
+              25,
+              36,
+              38,
+              8
+            ],
+            "picks": [
+              84,
+              54
+            ],
+            "drawn": [
+              15,
+              32,
+              28,
+              67,
+              56
+            ],
+            "hit": false,
+            "won_gross_eur": 0.0
+          }
+        ],
+        "spent": 5,
+        "hits": 0,
+        "won_gross": 0.0
+      }
+    },
+    "portfolio_all_11_wheels": {
+      "spent": 55,
+      "won_gross": 0.0,
+      "hits": 0,
+      "details": [],
+      "net_gross_eur": -55.0,
+      "net_net_eur": -55
+    },
+    "portfolio_best_5_wheels": {
+      "spent": 25,
+      "won_gross": 0.0,
+      "hits": 0,
+      "details": [],
+      "net_gross_eur": -25.0,
+      "net_net_eur": -25
+    }
+  },
+  "spain_primitiva": {
+    "game": "La Primitiva (Spagna)",
+    "method": "cross49_adapted_EXPERIMENTAL",
+    "warning": "Motore NON validato su storico spagnolo; solo confronto esplorativo",
+    "n_draws": 5,
+    "spent_eur": 5,
+    "won_eur": 0.0,
+    "net_eur": -5.0,
+    "draws": [
+      {
+        "date": "2026-05-30",
+        "prev_date": "2026-05-28",
+        "prev_nums": [
+          3,
+          9,
+          10,
+          26,
+          43,
+          46
+        ],
+        "picks": [
+          3,
+          9,
+          47,
+          10,
+          41,
+          1
+        ],
+        "drawn": [
+          2,
+          12,
+          32,
+          34,
+          48,
+          49
+        ],
+        "hits": 0,
+        "prize_eur": 0.0,
+        "source": "LaVanguardia.com"
+      },
+      {
+        "date": "2026-06-01",
+        "prev_date": "2026-05-30",
+        "prev_nums": [
+          2,
+          12,
+          32,
+          34,
+          48,
+          49
+        ],
+        "picks": [
+          2,
+          48,
+          12,
+          32,
+          38,
+          18
+        ],
+        "drawn": [
+          1,
+          4,
+          11,
+          12,
+          23,
+          39
+        ],
+        "hits": 1,
+        "prize_eur": 0.0,
+        "source": "LaVanguardia.com"
+      },
+      {
+        "date": "2026-06-04",
+        "prev_date": "2026-06-01",
+        "prev_nums": [
+          1,
+          4,
+          11,
+          12,
+          23,
+          39
+        ],
+        "picks": [
+          1,
+          4,
+          11,
+          49,
+          46,
+          12
+        ],
+        "drawn": [
+          16,
+          25,
+          32,
+          35,
+          38,
+          40
+        ],
+        "hits": 0,
+        "prize_eur": 0.0,
+        "source": "LaVanguardia.com"
+      },
+      {
+        "date": "2026-06-06",
+        "prev_date": "2026-06-04",
+        "prev_nums": [
+          16,
+          25,
+          32,
+          35,
+          38,
+          40
+        ],
+        "picks": [
+          25,
+          16,
+          34,
+          32,
+          18,
+          35
+        ],
+        "drawn": [
+          1,
+          6,
+          16,
+          17,
+          37,
+          43
+        ],
+        "hits": 1,
+        "prize_eur": 0.0,
+        "source": "LaVanguardia.com"
+      },
+      {
+        "date": "2026-06-08",
+        "prev_date": "2026-06-06",
+        "prev_nums": [
+          1,
+          6,
+          16,
+          17,
+          37,
+          43
+        ],
+        "picks": [
+          1,
+          6,
+          49,
+          16,
+          44,
+          17
+        ],
+        "drawn": [
+          2,
+          11,
+          13,
+          21,
+          33,
+          48
+        ],
+        "hits": 0,
+        "prize_eur": 0.0,
+        "source": "LaVanguardia.com"
+      }
+    ]
+  }
+}

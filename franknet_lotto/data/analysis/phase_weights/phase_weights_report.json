@@ -1,0 +1,259 @@
+{
+  "method": "extraction_phase_weights",
+  "train": 800,
+  "test": 500,
+  "top_k": 8,
+  "phase_schemas": [
+    "weekday",
+    "draw_mod4",
+    "draw_mod7",
+    "draw_mod9",
+    "anchor_decile",
+    "anchor_dr",
+    "weekday_x_draw_mod4",
+    "anchor_decile_x_draw_mod7",
+    "anchor_x_weekday",
+    "full_phase"
+  ],
+  "interpretation": "Proxy di 'periodo estrazione': weekday, draw_index mod P, decile del primo numero (pos1=seme). Peso empirico = numeri che nella stessa fase hanno colpito più del caso sulla quintina T+1. PLAY = fasi con train top-8 > MC p95. Non abbiamo pressione aria né operatore nel dataset — solo coordinate temporali.",
+  "wheels": [
+    {
+      "wheel": "BARI",
+      "best_schema": "weekday",
+      "test_top8_cross": 212,
+      "test_top8_phase": 215,
+      "test_mc_p95": 245,
+      "play_phases_train": 0,
+      "play_phases_test_hits": 0,
+      "play_phases_test_possible": 0
+    },
+    {
+      "wheel": "CAGLIARI",
+      "best_schema": "draw_mod9",
+      "test_top8_cross": 226,
+      "test_top8_phase": 231,
+      "test_mc_p95": 245,
+      "play_phases_train": 1,
+      "play_phases_test_hits": 23,
+      "play_phases_test_possible": 55
+    },
+    {
+      "wheel": "FIRENZE",
+      "best_schema": "anchor_dr",
+      "test_top8_cross": 199,
+      "test_top8_phase": 206,
+      "test_mc_p95": 244,
+      "play_phases_train": 0,
+      "play_phases_test_hits": 0,
+      "play_phases_test_possible": 0
+    },
+    {
+      "wheel": "GENOVA",
+      "best_schema": "draw_mod9",
+      "test_top8_cross": 215,
+      "test_top8_phase": 223,
+      "test_mc_p95": 244,
+      "play_phases_train": 0,
+      "play_phases_test_hits": 0,
+      "play_phases_test_possible": 0
+    },
+    {
+      "wheel": "MILANO",
+      "best_schema": "draw_mod4",
+      "test_top8_cross": 211,
+      "test_top8_phase": 217,
+      "test_mc_p95": 245,
+      "play_phases_train": 0,
+      "play_phases_test_hits": 0,
+      "play_phases_test_possible": 0
+    },
+    {
+      "wheel": "NAPOLI",
+      "best_schema": "weekday",
+      "test_top8_cross": 221,
+      "test_top8_phase": 223,
+      "test_mc_p95": 247,
+      "play_phases_train": 0,
+      "play_phases_test_hits": 0,
+      "play_phases_test_possible": 0
+    },
+    {
+      "wheel": "PALERMO",
+      "best_schema": "anchor_decile",
+      "test_top8_cross": 208,
+      "test_top8_phase": 211,
+      "test_mc_p95": 246,
+      "play_phases_train": 1,
+      "play_phases_test_hits": 19,
+      "play_phases_test_possible": 49
+    },
+    {
+      "wheel": "ROMA",
+      "best_schema": "draw_mod7",
+      "test_top8_cross": 250,
+      "test_top8_phase": 259,
+      "test_mc_p95": 246,
+      "play_phases_train": 0,
+      "play_phases_test_hits": 0,
+      "play_phases_test_possible": 0
+    },
+    {
+      "wheel": "TORINO",
+      "best_schema": "draw_mod4",
+      "test_top8_cross": 215,
+      "test_top8_phase": 221,
+      "test_mc_p95": 246,
+      "play_phases_train": 1,
+      "play_phases_test_hits": 52,
+      "play_phases_test_possible": 125
+    },
+    {
+      "wheel": "VENEZIA",
+      "best_schema": "draw_mod7",
+      "test_top8_cross": 226,
+      "test_top8_phase": 232,
+      "test_mc_p95": 246,
+      "play_phases_train": 0,
+      "play_phases_test_hits": 0,
+      "play_phases_test_possible": 0
+    },
+    {
+      "wheel": "NAZIONALE",
+      "best_schema": "weekday",
+      "test_top8_cross": 234,
+      "test_top8_phase": 241,
+      "test_mc_p95": 247,
+      "play_phases_train": 1,
+      "play_phases_test_hits": 61,
+      "play_phases_test_possible": 123
+    }
+  ],
+  "aggregate": {
+    "wheels": 11,
+    "phase_beats_cross": 11,
+    "phase_beats_mc": 1,
+    "best_delta": {
+      "wheel": "ROMA",
+      "best_schema": "draw_mod7",
+      "test_top8_cross": 250,
+      "test_top8_phase": 259,
+      "delta": 9,
+      "test_mc_p95": 246,
+      "beats_mc": true,
+      "play_phases_train": 0,
+      "play_test_draws": 0
+    },
+    "total_play_phases": 4
+  },
+  "weekday_legend": {
+    "0": "lun",
+    "1": "mar",
+    "2": "mer",
+    "3": "gio",
+    "4": "ven",
+    "5": "sab",
+    "6": "dom"
+  },
+  "next_draw_phase_forecast": [
+    {
+      "schema": "weekday",
+      "next_draw_index": 45,
+      "phase_key": "wd_1",
+      "phase_human": "mar (wd_1)",
+      "note": "draw_index+1; weekday da ultima estrazione (se stesso giorno ruota)"
+    },
+    {
+      "schema": "draw_mod4",
+      "next_draw_index": 45,
+      "phase_key": "d4_1",
+      "phase_human": "ciclo4 pos 1 (d4_1)",
+      "note": "draw_index+1; weekday da ultima estrazione (se stesso giorno ruota)"
+    },
+    {
+      "schema": "draw_mod7",
+      "next_draw_index": 45,
+      "phase_key": "d7_3",
+      "phase_human": "ciclo7 pos 3 (d7_3)",
+      "note": "draw_index+1; weekday da ultima estrazione (se stesso giorno ruota)"
+    },
+    {
+      "schema": "draw_mod9",
+      "next_draw_index": 45,
+      "phase_key": "d9_0",
+      "phase_human": "ciclo9 pos 0 (d9_0)",
+      "note": "draw_index+1; weekday da ultima estrazione (se stesso giorno ruota)"
+    },
+    {
+      "schema": "anchor_decile",
+      "next_draw_index": 45,
+      "phase_key": "ad_0",
+      "phase_human": "seme decile 0 (ad_0)",
+      "note": "draw_index+1; weekday da ultima estrazione (se stesso giorno ruota)"
+    },
+    {
+      "schema": "anchor_dr",
+      "next_draw_index": 45,
+      "phase_key": "dr_8",
+      "phase_human": "dr_8",
+      "note": "draw_index+1; weekday da ultima estrazione (se stesso giorno ruota)"
+    },
+    {
+      "schema": "weekday_x_draw_mod4",
+      "next_draw_index": 45,
+      "phase_key": "wd1_d4_1",
+      "phase_human": "wd1_d4_1",
+      "note": "draw_index+1; weekday da ultima estrazione (se stesso giorno ruota)"
+    },
+    {
+      "schema": "anchor_decile_x_draw_mod7",
+      "next_draw_index": 45,
+      "phase_key": "ad0_d7_3",
+      "phase_human": "ad0_d7_3",
+      "note": "draw_index+1; weekday da ultima estrazione (se stesso giorno ruota)"
+    },
+    {
+      "schema": "anchor_x_weekday",
+      "next_draw_index": 45,
+      "phase_key": "a8_wd1",
+      "phase_human": "a8_wd1",
+      "note": "draw_index+1; weekday da ultima estrazione (se stesso giorno ruota)"
+    },
+    {
+      "schema": "full_phase",
+      "next_draw_index": 45,
+      "phase_key": "wd1_d7_3_ad0",
+      "phase_human": "wd1_d7_3_ad0",
+      "note": "draw_index+1; weekday da ultima estrazione (se stesso giorno ruota)"
+    }
+  ],
+  "play_calendar_human": [
+    {
+      "wheel": "NAZIONALE",
+      "phase": "sab (wd_5)",
+      "signal": "PLAY",
+      "train_n": 256,
+      "test_top8_hits": 61
+    },
+    {
+      "wheel": "TORINO",
+      "phase": "ciclo4 pos 2 (d4_2)",
+      "signal": "PLAY",
+      "train_n": 200,
+      "test_top8_hits": 52
+    },
+    {
+      "wheel": "CAGLIARI",
+      "phase": "ciclo9 pos 7 (d9_7)",
+      "signal": "PLAY",
+      "train_n": 87,
+      "test_top8_hits": 23
+    },
+    {
+      "wheel": "PALERMO",
+      "phase": "seme decile 4 (ad_4)",
+      "signal": "PLAY",
+      "train_n": 80,
+      "test_top8_hits": 19
+    }
+  ]
+}

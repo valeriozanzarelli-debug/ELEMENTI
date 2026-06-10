@@ -1,0 +1,965 @@
+{
+  "method": "super_engine_sorte_backtest",
+  "train_until": 2014,
+  "test_from": 2015,
+  "sorte": [
+    "ambo"
+  ],
+  "wheels": [
+    {
+      "wheel": "BARI",
+      "train_n": 8771,
+      "test_n": 1877,
+      "sorte": {
+        "ambo": {
+          "strategy": "best_pair",
+          "weights": {
+            "w_cross": 2.0,
+            "w_harmonic": 0,
+            "w_lattice": 18,
+            "w_knn": 35,
+            "w_anchor_echo": 8,
+            "w_cooc": 15,
+            "score_all_90": true,
+            "pick_pool_size": 10,
+            "confidence_min_margin": 0.0
+          },
+          "train_pick": "science",
+          "test_cross": {
+            "draws": 1877,
+            "hits": 3,
+            "hit_rate": 0.001598,
+            "spent_eur": 1877,
+            "won_gross_eur": 750.0,
+            "net_gross_eur": -1127.0,
+            "net_net_eur": -1187.0,
+            "months_with_hit": 3,
+            "hit_months": {
+              "2021-06": 1,
+              "2023-02": 1,
+              "2023-07": 1
+            }
+          },
+          "test_science": {
+            "draws": 1877,
+            "hits": 3,
+            "hit_rate": 0.001598,
+            "spent_eur": 1877,
+            "won_gross_eur": 750.0,
+            "net_gross_eur": -1127.0,
+            "net_net_eur": -1187.0,
+            "months_with_hit": 3,
+            "hit_months": {
+              "2022-09": 1,
+              "2023-06": 1,
+              "2023-10": 1
+            }
+          },
+          "test_best": {
+            "draws": 1877,
+            "hits": 3,
+            "hit_rate": 0.001598,
+            "spent_eur": 1877,
+            "won_gross_eur": 750.0,
+            "net_gross_eur": -1127.0,
+            "net_net_eur": -1187.0,
+            "months_with_hit": 3,
+            "hit_months": {
+              "2022-09": 1,
+              "2023-06": 1,
+              "2023-10": 1
+            }
+          },
+          "delta_net_gross": 0.0,
+          "science_beats_cross": false
+        }
+      }
+    },
+    {
+      "wheel": "CAGLIARI",
+      "train_n": 5296,
+      "test_n": 1877,
+      "sorte": {
+        "ambo": {
+          "strategy": "best_pair",
+          "weights": {
+            "w_cross": 1.0,
+            "w_harmonic": 80,
+            "w_lattice": 18,
+            "w_knn": 15,
+            "w_anchor_echo": 8,
+            "w_cooc": 15,
+            "score_all_90": true,
+            "pick_pool_size": 10,
+            "confidence_min_margin": 0.0
+          },
+          "train_pick": "science",
+          "test_cross": {
+            "draws": 1877,
+            "hits": 6,
+            "hit_rate": 0.003197,
+            "spent_eur": 1877,
+            "won_gross_eur": 1500.0,
+            "net_gross_eur": -377.0,
+            "net_net_eur": -497.0,
+            "months_with_hit": 6,
+            "hit_months": {
+              "2016-04": 1,
+              "2022-09": 1,
+              "2023-05": 1,
+              "2024-07": 1,
+              "2025-08": 1,
+              "2026-01": 1
+            }
+          },
+          "test_science": {
+            "draws": 1877,
+            "hits": 4,
+            "hit_rate": 0.002131,
+            "spent_eur": 1877,
+            "won_gross_eur": 1000.0,
+            "net_gross_eur": -877.0,
+            "net_net_eur": -957.0,
+            "months_with_hit": 4,
+            "hit_months": {
+              "2017-07": 1,
+              "2021-04": 1,
+              "2021-10": 1,
+              "2024-02": 1
+            }
+          },
+          "test_best": {
+            "draws": 1877,
+            "hits": 4,
+            "hit_rate": 0.002131,
+            "spent_eur": 1877,
+            "won_gross_eur": 1000.0,
+            "net_gross_eur": -877.0,
+            "net_net_eur": -957.0,
+            "months_with_hit": 4,
+            "hit_months": {
+              "2017-07": 1,
+              "2021-04": 1,
+              "2021-10": 1,
+              "2024-02": 1
+            }
+          },
+          "delta_net_gross": -500.0,
+          "science_beats_cross": false
+        }
+      }
+    },
+    {
+      "wheel": "FIRENZE",
+      "train_n": 8937,
+      "test_n": 1877,
+      "sorte": {
+        "ambo": {
+          "strategy": "best_pair",
+          "weights": {
+            "w_cross": 2.0,
+            "w_harmonic": 0,
+            "w_lattice": 18,
+            "w_knn": 35,
+            "w_anchor_echo": 8,
+            "w_cooc": 15,
+            "score_all_90": true,
+            "pick_pool_size": 10,
+            "confidence_min_margin": 0.0
+          },
+          "train_pick": "science",
+          "test_cross": {
+            "draws": 1877,
+            "hits": 3,
+            "hit_rate": 0.001598,
+            "spent_eur": 1877,
+            "won_gross_eur": 750.0,
+            "net_gross_eur": -1127.0,
+            "net_net_eur": -1187.0,
+            "months_with_hit": 3,
+            "hit_months": {
+              "2016-08": 1,
+              "2019-07": 1,
+              "2021-03": 1
+            }
+          },
+          "test_science": {
+            "draws": 1877,
+            "hits": 7,
+            "hit_rate": 0.003729,
+            "spent_eur": 1877,
+            "won_gross_eur": 1750.0,
+            "net_gross_eur": -127.0,
+            "net_net_eur": -267.0,
+            "months_with_hit": 6,
+            "hit_months": {
+              "2016-02": 2,
+              "2018-07": 1,
+              "2019-07": 1,
+              "2021-11": 1,
+              "2024-03": 1,
+              "2025-06": 1
+            }
+          },
+          "test_best": {
+            "draws": 1877,
+            "hits": 7,
+            "hit_rate": 0.003729,
+            "spent_eur": 1877,
+            "won_gross_eur": 1750.0,
+            "net_gross_eur": -127.0,
+            "net_net_eur": -267.0,
+            "months_with_hit": 6,
+            "hit_months": {
+              "2016-02": 2,
+              "2018-07": 1,
+              "2019-07": 1,
+              "2021-11": 1,
+              "2024-03": 1,
+              "2025-06": 1
+            }
+          },
+          "delta_net_gross": 1000.0,
+          "science_beats_cross": true
+        }
+      }
+    },
+    {
+      "wheel": "GENOVA",
+      "train_n": 5368,
+      "test_n": 1877,
+      "sorte": {
+        "ambo": {
+          "strategy": "best_pair",
+          "weights": {
+            "w_cross": 1.0,
+            "w_harmonic": 0,
+            "w_lattice": 18,
+            "w_knn": 35,
+            "w_anchor_echo": 8,
+            "w_cooc": 15,
+            "score_all_90": true,
+            "pick_pool_size": 10,
+            "confidence_min_margin": 0.0
+          },
+          "train_pick": "science",
+          "test_cross": {
+            "draws": 1877,
+            "hits": 6,
+            "hit_rate": 0.003197,
+            "spent_eur": 1877,
+            "won_gross_eur": 1500.0,
+            "net_gross_eur": -377.0,
+            "net_net_eur": -497.0,
+            "months_with_hit": 6,
+            "hit_months": {
+              "2015-04": 1,
+              "2016-08": 1,
+              "2019-05": 1,
+              "2021-06": 1,
+              "2021-10": 1,
+              "2022-08": 1
+            }
+          },
+          "test_science": {
+            "draws": 1877,
+            "hits": 5,
+            "hit_rate": 0.002664,
+            "spent_eur": 1877,
+            "won_gross_eur": 1250.0,
+            "net_gross_eur": -627.0,
+            "net_net_eur": -727.0,
+            "months_with_hit": 5,
+            "hit_months": {
+              "2015-05": 1,
+              "2023-04": 1,
+              "2023-10": 1,
+              "2024-11": 1,
+              "2025-12": 1
+            }
+          },
+          "test_best": {
+            "draws": 1877,
+            "hits": 5,
+            "hit_rate": 0.002664,
+            "spent_eur": 1877,
+            "won_gross_eur": 1250.0,
+            "net_gross_eur": -627.0,
+            "net_net_eur": -727.0,
+            "months_with_hit": 5,
+            "hit_months": {
+              "2015-05": 1,
+              "2023-04": 1,
+              "2023-10": 1,
+              "2024-11": 1,
+              "2025-12": 1
+            }
+          },
+          "delta_net_gross": -250.0,
+          "science_beats_cross": false
+        }
+      }
+    },
+    {
+      "wheel": "MILANO",
+      "train_n": 8943,
+      "test_n": 1877,
+      "sorte": {
+        "ambo": {
+          "strategy": "best_pair",
+          "weights": {
+            "w_cross": 1.0,
+            "w_harmonic": 80,
+            "w_lattice": 18,
+            "w_knn": 15,
+            "w_anchor_echo": 8,
+            "w_cooc": 15,
+            "score_all_90": true,
+            "pick_pool_size": 10,
+            "confidence_min_margin": 0.0
+          },
+          "train_pick": "science",
+          "test_cross": {
+            "draws": 1877,
+            "hits": 2,
+            "hit_rate": 0.001066,
+            "spent_eur": 1877,
+            "won_gross_eur": 500.0,
+            "net_gross_eur": -1377.0,
+            "net_net_eur": -1417.0,
+            "months_with_hit": 2,
+            "hit_months": {
+              "2024-07": 1,
+              "2025-05": 1
+            }
+          },
+          "test_science": {
+            "draws": 1877,
+            "hits": 10,
+            "hit_rate": 0.005328,
+            "spent_eur": 1877,
+            "won_gross_eur": 2500.0,
+            "net_gross_eur": 623.0,
+            "net_net_eur": 423.0,
+            "months_with_hit": 10,
+            "hit_months": {
+              "2016-12": 1,
+              "2018-03": 1,
+              "2019-01": 1,
+              "2019-12": 1,
+              "2021-01": 1,
+              "2022-01": 1,
+              "2023-10": 1,
+              "2023-12": 1,
+              "2024-07": 1,
+              "2024-08": 1
+            }
+          },
+          "test_best": {
+            "draws": 1877,
+            "hits": 10,
+            "hit_rate": 0.005328,
+            "spent_eur": 1877,
+            "won_gross_eur": 2500.0,
+            "net_gross_eur": 623.0,
+            "net_net_eur": 423.0,
+            "months_with_hit": 10,
+            "hit_months": {
+              "2016-12": 1,
+              "2018-03": 1,
+              "2019-01": 1,
+              "2019-12": 1,
+              "2021-01": 1,
+              "2022-01": 1,
+              "2023-10": 1,
+              "2023-12": 1,
+              "2024-07": 1,
+              "2024-08": 1
+            }
+          },
+          "delta_net_gross": 2000.0,
+          "science_beats_cross": true
+        }
+      }
+    },
+    {
+      "wheel": "NAPOLI",
+      "train_n": 8939,
+      "test_n": 1877,
+      "sorte": {
+        "ambo": {
+          "strategy": "best_pair",
+          "weights": {
+            "w_cross": 1.0,
+            "w_harmonic": 120,
+            "w_lattice": 18,
+            "w_knn": 15,
+            "w_anchor_echo": 8,
+            "w_cooc": 15,
+            "score_all_90": true,
+            "pick_pool_size": 10,
+            "confidence_min_margin": 0.0
+          },
+          "train_pick": "science",
+          "test_cross": {
+            "draws": 1877,
+            "hits": 3,
+            "hit_rate": 0.001598,
+            "spent_eur": 1877,
+            "won_gross_eur": 750.0,
+            "net_gross_eur": -1127.0,
+            "net_net_eur": -1187.0,
+            "months_with_hit": 3,
+            "hit_months": {
+              "2016-09": 1,
+              "2018-03": 1,
+              "2018-11": 1
+            }
+          },
+          "test_science": {
+            "draws": 1877,
+            "hits": 8,
+            "hit_rate": 0.004262,
+            "spent_eur": 1877,
+            "won_gross_eur": 2000.0,
+            "net_gross_eur": 123.0,
+            "net_net_eur": -37.0,
+            "months_with_hit": 8,
+            "hit_months": {
+              "2015-09": 1,
+              "2017-06": 1,
+              "2019-03": 1,
+              "2020-05": 1,
+              "2020-06": 1,
+              "2021-04": 1,
+              "2024-06": 1,
+              "2025-09": 1
+            }
+          },
+          "test_best": {
+            "draws": 1877,
+            "hits": 8,
+            "hit_rate": 0.004262,
+            "spent_eur": 1877,
+            "won_gross_eur": 2000.0,
+            "net_gross_eur": 123.0,
+            "net_net_eur": -37.0,
+            "months_with_hit": 8,
+            "hit_months": {
+              "2015-09": 1,
+              "2017-06": 1,
+              "2019-03": 1,
+              "2020-05": 1,
+              "2020-06": 1,
+              "2021-04": 1,
+              "2024-06": 1,
+              "2025-09": 1
+            }
+          },
+          "delta_net_gross": 1250.0,
+          "science_beats_cross": true
+        }
+      }
+    },
+    {
+      "wheel": "PALERMO",
+      "train_n": 8919,
+      "test_n": 1877,
+      "sorte": {
+        "ambo": {
+          "strategy": "best_pair",
+          "weights": {
+            "w_cross": 1.0,
+            "w_harmonic": 0,
+            "w_lattice": 18,
+            "w_knn": 15,
+            "w_anchor_echo": 8,
+            "w_cooc": 15,
+            "score_all_90": true,
+            "pick_pool_size": 10,
+            "confidence_min_margin": 0.0
+          },
+          "train_pick": "science",
+          "test_cross": {
+            "draws": 1877,
+            "hits": 6,
+            "hit_rate": 0.003197,
+            "spent_eur": 1877,
+            "won_gross_eur": 1500.0,
+            "net_gross_eur": -377.0,
+            "net_net_eur": -497.0,
+            "months_with_hit": 6,
+            "hit_months": {
+              "2020-07": 1,
+              "2021-11": 1,
+              "2023-04": 1,
+              "2023-10": 1,
+              "2024-07": 1,
+              "2025-06": 1
+            }
+          },
+          "test_science": {
+            "draws": 1877,
+            "hits": 11,
+            "hit_rate": 0.00586,
+            "spent_eur": 1877,
+            "won_gross_eur": 2750.0,
+            "net_gross_eur": 873.0,
+            "net_net_eur": 653.0,
+            "months_with_hit": 11,
+            "hit_months": {
+              "2018-09": 1,
+              "2019-01": 1,
+              "2019-04": 1,
+              "2019-06": 1,
+              "2021-08": 1,
+              "2023-07": 1,
+              "2023-11": 1,
+              "2024-08": 1,
+              "2025-08": 1,
+              "2026-01": 1,
+              "2026-02": 1
+            }
+          },
+          "test_best": {
+            "draws": 1877,
+            "hits": 11,
+            "hit_rate": 0.00586,
+            "spent_eur": 1877,
+            "won_gross_eur": 2750.0,
+            "net_gross_eur": 873.0,
+            "net_net_eur": 653.0,
+            "months_with_hit": 11,
+            "hit_months": {
+              "2018-09": 1,
+              "2019-01": 1,
+              "2019-04": 1,
+              "2019-06": 1,
+              "2021-08": 1,
+              "2023-07": 1,
+              "2023-11": 1,
+              "2024-08": 1,
+              "2025-08": 1,
+              "2026-01": 1,
+              "2026-02": 1
+            }
+          },
+          "delta_net_gross": 1250.0,
+          "science_beats_cross": true
+        }
+      }
+    },
+    {
+      "wheel": "ROMA",
+      "train_n": 8943,
+      "test_n": 1877,
+      "sorte": {
+        "ambo": {
+          "strategy": "best_pair",
+          "weights": {
+            "w_cross": 1.0,
+            "w_harmonic": 80,
+            "w_lattice": 18,
+            "w_knn": 15,
+            "w_anchor_echo": 8,
+            "w_cooc": 15,
+            "score_all_90": true,
+            "pick_pool_size": 10,
+            "confidence_min_margin": 0.0
+          },
+          "train_pick": "science",
+          "test_cross": {
+            "draws": 1877,
+            "hits": 5,
+            "hit_rate": 0.002664,
+            "spent_eur": 1877,
+            "won_gross_eur": 1250.0,
+            "net_gross_eur": -627.0,
+            "net_net_eur": -727.0,
+            "months_with_hit": 5,
+            "hit_months": {
+              "2019-05": 1,
+              "2022-06": 1,
+              "2022-11": 1,
+              "2024-10": 1,
+              "2026-01": 1
+            }
+          },
+          "test_science": {
+            "draws": 1877,
+            "hits": 9,
+            "hit_rate": 0.004795,
+            "spent_eur": 1877,
+            "won_gross_eur": 2250.0,
+            "net_gross_eur": 373.0,
+            "net_net_eur": 193.0,
+            "months_with_hit": 7,
+            "hit_months": {
+              "2019-04": 2,
+              "2020-06": 2,
+              "2024-03": 1,
+              "2024-04": 1,
+              "2024-06": 1,
+              "2024-07": 1,
+              "2024-12": 1
+            }
+          },
+          "test_best": {
+            "draws": 1877,
+            "hits": 9,
+            "hit_rate": 0.004795,
+            "spent_eur": 1877,
+            "won_gross_eur": 2250.0,
+            "net_gross_eur": 373.0,
+            "net_net_eur": 193.0,
+            "months_with_hit": 7,
+            "hit_months": {
+              "2019-04": 2,
+              "2020-06": 2,
+              "2024-03": 1,
+              "2024-04": 1,
+              "2024-06": 1,
+              "2024-07": 1,
+              "2024-12": 1
+            }
+          },
+          "delta_net_gross": 1000.0,
+          "science_beats_cross": true
+        }
+      }
+    },
+    {
+      "wheel": "TORINO",
+      "train_n": 8943,
+      "test_n": 1877,
+      "sorte": {
+        "ambo": {
+          "strategy": "best_pair",
+          "weights": {
+            "w_cross": 2.0,
+            "w_harmonic": 0,
+            "w_lattice": 18,
+            "w_knn": 15,
+            "w_anchor_echo": 8,
+            "w_cooc": 15,
+            "score_all_90": false,
+            "pick_pool_size": 10,
+            "confidence_min_margin": 0.0
+          },
+          "train_pick": "science",
+          "test_cross": {
+            "draws": 1877,
+            "hits": 7,
+            "hit_rate": 0.003729,
+            "spent_eur": 1877,
+            "won_gross_eur": 1750.0,
+            "net_gross_eur": -127.0,
+            "net_net_eur": -267.0,
+            "months_with_hit": 5,
+            "hit_months": {
+              "2019-06": 1,
+              "2019-11": 1,
+              "2025-01": 1,
+              "2025-03": 3,
+              "2025-09": 1
+            }
+          },
+          "test_science": {
+            "draws": 1877,
+            "hits": 8,
+            "hit_rate": 0.004262,
+            "spent_eur": 1877,
+            "won_gross_eur": 2000.0,
+            "net_gross_eur": 123.0,
+            "net_net_eur": -37.0,
+            "months_with_hit": 7,
+            "hit_months": {
+              "2019-04": 1,
+              "2022-12": 1,
+              "2023-01": 1,
+              "2023-02": 1,
+              "2025-01": 2,
+              "2025-06": 1,
+              "2026-03": 1
+            }
+          },
+          "test_best": {
+            "draws": 1877,
+            "hits": 8,
+            "hit_rate": 0.004262,
+            "spent_eur": 1877,
+            "won_gross_eur": 2000.0,
+            "net_gross_eur": 123.0,
+            "net_net_eur": -37.0,
+            "months_with_hit": 7,
+            "hit_months": {
+              "2019-04": 1,
+              "2022-12": 1,
+              "2023-01": 1,
+              "2023-02": 1,
+              "2025-01": 2,
+              "2025-06": 1,
+              "2026-03": 1
+            }
+          },
+          "delta_net_gross": 250.0,
+          "science_beats_cross": true
+        }
+      }
+    },
+    {
+      "wheel": "VENEZIA",
+      "train_n": 8942,
+      "test_n": 1877,
+      "sorte": {
+        "ambo": {
+          "strategy": "best_pair",
+          "weights": {
+            "w_cross": 2.0,
+            "w_harmonic": 80,
+            "w_lattice": 18,
+            "w_knn": 15,
+            "w_anchor_echo": 8,
+            "w_cooc": 15,
+            "score_all_90": true,
+            "pick_pool_size": 10,
+            "confidence_min_margin": 0.0
+          },
+          "train_pick": "science",
+          "test_cross": {
+            "draws": 1877,
+            "hits": 1,
+            "hit_rate": 0.000533,
+            "spent_eur": 1877,
+            "won_gross_eur": 250.0,
+            "net_gross_eur": -1627.0,
+            "net_net_eur": -1647.0,
+            "months_with_hit": 1,
+            "hit_months": {
+              "2023-01": 1
+            }
+          },
+          "test_science": {
+            "draws": 1877,
+            "hits": 9,
+            "hit_rate": 0.004795,
+            "spent_eur": 1877,
+            "won_gross_eur": 2250.0,
+            "net_gross_eur": 373.0,
+            "net_net_eur": 193.0,
+            "months_with_hit": 9,
+            "hit_months": {
+              "2017-06": 1,
+              "2018-06": 1,
+              "2019-03": 1,
+              "2021-04": 1,
+              "2022-05": 1,
+              "2024-03": 1,
+              "2025-05": 1,
+              "2025-09": 1,
+              "2026-01": 1
+            }
+          },
+          "test_best": {
+            "draws": 1877,
+            "hits": 9,
+            "hit_rate": 0.004795,
+            "spent_eur": 1877,
+            "won_gross_eur": 2250.0,
+            "net_gross_eur": 373.0,
+            "net_net_eur": 193.0,
+            "months_with_hit": 9,
+            "hit_months": {
+              "2017-06": 1,
+              "2018-06": 1,
+              "2019-03": 1,
+              "2021-04": 1,
+              "2022-05": 1,
+              "2024-03": 1,
+              "2025-05": 1,
+              "2025-09": 1,
+              "2026-01": 1
+            }
+          },
+          "delta_net_gross": 2000.0,
+          "science_beats_cross": true
+        }
+      }
+    },
+    {
+      "wheel": "NAZIONALE",
+      "train_n": 1505,
+      "test_n": 1877,
+      "sorte": {
+        "ambo": {
+          "strategy": "best_pair",
+          "weights": {
+            "w_cross": 1.0,
+            "w_harmonic": 0,
+            "w_lattice": 18,
+            "w_knn": 35,
+            "w_anchor_echo": 8,
+            "w_cooc": 15,
+            "score_all_90": true,
+            "pick_pool_size": 10,
+            "confidence_min_margin": 0.0
+          },
+          "train_pick": "cross",
+          "test_cross": {
+            "draws": 1877,
+            "hits": 10,
+            "hit_rate": 0.005328,
+            "spent_eur": 1877,
+            "won_gross_eur": 2500.0,
+            "net_gross_eur": 623.0,
+            "net_net_eur": 423.0,
+            "months_with_hit": 10,
+            "hit_months": {
+              "2015-11": 1,
+              "2017-10": 1,
+              "2018-01": 1,
+              "2018-03": 1,
+              "2020-02": 1,
+              "2020-03": 1,
+              "2022-02": 1,
+              "2023-12": 1,
+              "2025-01": 1,
+              "2026-02": 1
+            }
+          },
+          "test_science": {
+            "draws": 1877,
+            "hits": 3,
+            "hit_rate": 0.001598,
+            "spent_eur": 1877,
+            "won_gross_eur": 750.0,
+            "net_gross_eur": -1127.0,
+            "net_net_eur": -1187.0,
+            "months_with_hit": 3,
+            "hit_months": {
+              "2019-06": 1,
+              "2020-11": 1,
+              "2025-09": 1
+            }
+          },
+          "test_best": {
+            "draws": 1877,
+            "hits": 10,
+            "hit_rate": 0.005328,
+            "spent_eur": 1877,
+            "won_gross_eur": 2500.0,
+            "net_gross_eur": 623.0,
+            "net_net_eur": 423.0,
+            "months_with_hit": 10,
+            "hit_months": {
+              "2015-11": 1,
+              "2017-10": 1,
+              "2018-01": 1,
+              "2018-03": 1,
+              "2020-02": 1,
+              "2020-03": 1,
+              "2022-02": 1,
+              "2023-12": 1,
+              "2025-01": 1,
+              "2026-02": 1
+            }
+          },
+          "delta_net_gross": -1750.0,
+          "science_beats_cross": false
+        }
+      }
+    }
+  ],
+  "aggregate_test_2015_26": {
+    "ambo": {
+      "cross_net": -7647.0,
+      "science_net": -1397.0,
+      "wheels_profit_sci": 6,
+      "best_net": 353.0,
+      "wheels_profit_best": 7
+    }
+  },
+  "portfolio_test_2015_26": {
+    "cross_all_wheels_sorte": -7647.0,
+    "science_all_wheels_sorte": -1397.0,
+    "best_mode_all_wheels_sorte": 353.0,
+    "profitable_cells": [
+      {
+        "wheel": "PALERMO",
+        "sorte": "ambo",
+        "mode": "science",
+        "net_gross": 873.0,
+        "hits": 11
+      },
+      {
+        "wheel": "MILANO",
+        "sorte": "ambo",
+        "mode": "science",
+        "net_gross": 623.0,
+        "hits": 10
+      },
+      {
+        "wheel": "NAZIONALE",
+        "sorte": "ambo",
+        "mode": "cross",
+        "net_gross": 623.0,
+        "hits": 10
+      },
+      {
+        "wheel": "ROMA",
+        "sorte": "ambo",
+        "mode": "science",
+        "net_gross": 373.0,
+        "hits": 9
+      },
+      {
+        "wheel": "VENEZIA",
+        "sorte": "ambo",
+        "mode": "science",
+        "net_gross": 373.0,
+        "hits": 9
+      },
+      {
+        "wheel": "NAPOLI",
+        "sorte": "ambo",
+        "mode": "science",
+        "net_gross": 123.0,
+        "hits": 8
+      },
+      {
+        "wheel": "TORINO",
+        "sorte": "ambo",
+        "mode": "science",
+        "net_gross": 123.0,
+        "hits": 8
+      }
+    ]
+  },
+  "best_science_profits": [
+    {
+      "sorte": "ambo",
+      "top5": [
+        {
+          "wheel": "PALERMO",
+          "net_gross": 873.0
+        },
+        {
+          "wheel": "MILANO",
+          "net_gross": 623.0
+        },
+        {
+          "wheel": "ROMA",
+          "net_gross": 373.0
+        },
+        {
+          "wheel": "VENEZIA",
+          "net_gross": 373.0
+        },
+        {
+          "wheel": "NAPOLI",
+          "net_gross": 123.0
+        }
+      ]
+    }
+  ]
+}
