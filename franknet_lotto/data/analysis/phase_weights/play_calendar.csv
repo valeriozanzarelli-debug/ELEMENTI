@@ -1,0 +1,5 @@
+schema,phase_key,train_n,train_top8_hits,train_mc_p95,signal,test_n,test_top8_hits,wheel,phase_human
+weekday,wd_5,256,140,129,PLAY,123,61,NAZIONALE,sab (wd_5)
+draw_mod4,d4_2,200,116,103,PLAY,125,52,TORINO,ciclo4 pos 2 (d4_2)
+draw_mod9,d9_7,87,56,48,PLAY,55,23,CAGLIARI,ciclo9 pos 7 (d9_7)
+anchor_decile,ad_4,80,45,44,PLAY,49,19,PALERMO,seme decile 4 (ad_4)
