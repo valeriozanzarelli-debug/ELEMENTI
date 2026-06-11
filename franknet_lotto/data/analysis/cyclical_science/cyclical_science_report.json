@@ -1,0 +1,73 @@
+{
+  "method": "cyclical_science_engine",
+  "data_span": "1871-2026 Franknet",
+  "phase_vector_dims": 13,
+  "harmonic_periods": [
+    5,
+    7,
+    9,
+    11,
+    13,
+    17,
+    23,
+    29,
+    37,
+    52,
+    90
+  ],
+  "interpretation": "Pesi = cross + armoniche Fourier su global_idx + reticolo fase (weekday, mese, draw mod, ciclo90, seme) + k-NN fase + eco seme. Cinquina = top-5 scored == quintina estratta.",
+  "wheels": [
+    {
+      "wheel": "ROMA",
+      "train_draws": 8944,
+      "test_draws": 1877,
+      "train_years": "1871-2014",
+      "test_years": "2015-2026",
+      "weights": {
+        "w_cross": 1.0,
+        "w_harmonic": 120,
+        "w_lattice": 20,
+        "w_knn": 40,
+        "w_anchor_echo": 14,
+        "w_cooc": 60,
+        "score_all_90": true,
+        "pick_pool_size": 18,
+        "confidence_min_margin": 0.0
+      },
+      "test_cross": {
+        "hit_0": 1418,
+        "hit_1": 415,
+        "hit_2": 43,
+        "hit_3": 1
+      },
+      "test_science": {
+        "draws": 1877,
+        "hit_0": 1357,
+        "hit_1": 459,
+        "hit_2": 56,
+        "hit_3": 4,
+        "terno_plus": 5,
+        "hit_4": 1,
+        "quaterna_plus": 1
+      },
+      "test_science_gated": {
+        "draws": 1877,
+        "hit_0": 1357,
+        "hit_1": 459,
+        "hit_2": 56,
+        "hit_3": 4,
+        "terno_plus": 5,
+        "hit_4": 1,
+        "quaterna_plus": 1
+      },
+      "months_cinquina_science": 0,
+      "monthly_science": {
+        "2024-06": {
+          "quaterna_plus": 1
+        }
+      }
+    }
+  ],
+  "portfolio_11_wheels": {},
+  "honest_note": "Cinquina esatta è ~1/44M a caso per 5 numeri fissi. Il motore cerca risnanze cicliche; obiettivo '1/mese' richiede verifica su portfolio."
+}
