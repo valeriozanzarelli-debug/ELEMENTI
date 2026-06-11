@@ -1,4 +1,4 @@
-/** cross_opt_v1 + score — funziona solo con ultima cinquina (client-side) */
+/** cross_opt_v1 + score_cross_numbers — identico a Python simulate_ambi_2025 */
 
 function comp(n) {
   if (n === 45 || n === 90) return null;
@@ -41,7 +41,7 @@ function add(pool, n) {
   if (n != null && n >= 1 && n <= 90) pool.add(n);
 }
 
-function poolCrossOptV1(nums) {
+function poolCrossOnly(nums) {
   const pool = new Set();
   const diffs = adjDiffs(nums);
   for (const n of nums) {
@@ -57,10 +57,17 @@ function poolCrossOptV1(nums) {
         for (const x of neighbors(base, true)) add(pool, x);
       }
     }
+  }
+  return pool;
+}
+
+function poolCrossOptV1(nums) {
+  const pool = poolCrossOnly(nums);
+  for (const n of nums) {
     add(pool, comp(n));
     add(pool, vert(n));
   }
-  for (const d of diffs) {
+  for (const d of adjDiffs(nums)) {
     const vd = vert(d);
     if (vd) for (const x of neighbors(vd, true)) add(pool, x);
   }
@@ -82,9 +89,9 @@ function scoreCross(nums) {
         bump(cn + d, 4);
         bump(Math.abs(cn - d), 2);
       }
-      for (const base of [n, cn, vert(n)].filter(Boolean)) {
-        for (const x of neighbors(base, true)) bump(x, isTwin(base) ? 2 : 1);
-      }
+    }
+    for (const base of [n, cn, vert(n)].filter(Boolean)) {
+      for (const x of neighbors(base, true)) bump(x, isTwin(base) ? 2 : 1);
     }
   }
   if (nums.includes(45)) bump(45, 3);
@@ -138,7 +145,7 @@ function comboBest(scores, cands, k) {
   return best;
 }
 
-export function predictCrossOnly(quintina) {
+function predictCrossOnly(quintina) {
   const pool = poolCrossOptV1(quintina);
   const scores = scoreCross(quintina);
   const top8 = topN(pool, scores, 8);

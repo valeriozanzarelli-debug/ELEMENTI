@@ -11,10 +11,10 @@ Apri **http://localhost:8765**
 
 ## Uso
 
-1. Scegli la **ruota**
-2. Inserisci l'**ultima cinquina** nell'ordine di estrazione (pos1 → pos5)
-3. Clicca **Calcola** → ottieni ambo, terno, quaterna, cinquina
+1. Scegli la **ruota** (su cui giochi)
+2. Inserisci l'**ultima cinquina di quella ruota** nell'ordine di estrazione (pos1 → pos5)
+3. Clicca **Calcola** → ambo, terno, quaterna, cinquina
 
-Senza server Python funziona solo il metodo **cross** (sufficiente per NAZIONALE ambo).
+**Data e n° concorso non servono** — il calcolo usa solo i 5 numeri.
 
-Con server attivo si aggiunge il layer **science** (armoniche + fase + k-NN su storico Franknet).
+Il metodo è **cross_opt_v1** (complementi, vertibili, diff, incroci). Funziona anche offline nel browser.

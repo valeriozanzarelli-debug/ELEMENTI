@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Server web super motore Lotto — inserisci cinquina, ottieni ambo/terno/quaterna."""
+"""Server web super motore Lotto — quintina in, ambo/terno/quaterna out."""
 
 from __future__ import annotations
 
@@ -7,7 +7,7 @@ import json
 import sys
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
-from urllib.parse import parse_qs, urlparse
+from urllib.parse import urlparse
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
@@ -25,6 +25,7 @@ class Handler(BaseHTTPRequestHandler):
         self.send_response(code)
         self.send_header("Content-Type", content_type)
         self.send_header("Access-Control-Allow-Origin", "*")
+        self.send_header("Cache-Control", "no-store")
         self.send_header("Content-Length", str(len(body)))
         self.end_headers()
         self.wfile.write(body)
@@ -45,10 +46,9 @@ class Handler(BaseHTTPRequestHandler):
     def do_GET(self) -> None:
         path = urlparse(self.path).path
         if path in ("/", "/index.html"):
-            html = (WEB_DIR / "index.html").read_bytes()
-            return self._send(200, html, "text/html; charset=utf-8")
+            return self._send(200, (WEB_DIR / "index.html").read_bytes(), "text/html; charset=utf-8")
         if path.endswith(".js"):
-            js = (WEB_DIR / Path(path).name)
+            js = WEB_DIR / Path(path).name
             if js.is_file():
                 return self._send(200, js.read_bytes(), "application/javascript; charset=utf-8")
         if path == "/api/wheels":
@@ -62,15 +62,8 @@ class Handler(BaseHTTPRequestHandler):
             return self._send(404, b'{"error":"not found"}')
         try:
             data = self._read_json()
-            wheel = data.get("wheel", "NAZIONALE")
             quintina = [int(x) for x in data["quintina"]]
-            result = predict_from_quintina(
-                wheel,
-                quintina,
-                prev_date=data.get("prev_date"),
-                next_date=data.get("next_date"),
-                draw_index=data.get("draw_index"),
-            )
+            result = predict_from_quintina(data.get("wheel", "NAZIONALE"), quintina)
             self._send(200, json.dumps(result, ensure_ascii=False).encode())
         except (KeyError, TypeError, ValueError) as e:
             self._send(400, json.dumps({"error": str(e)}, ensure_ascii=False).encode())
@@ -84,7 +77,6 @@ def main() -> int:
         return 1
     server = HTTPServer(("0.0.0.0", PORT), Handler)
     print(f"Super Motore Lotto → http://localhost:{PORT}")
-    print("Inserisci ultima cinquina e ottieni ambo, terno, quaterna, cinquina")
     try:
         server.serve_forever()
     except KeyboardInterrupt:
